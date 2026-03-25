@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Planet Star – Galaxien</title>
+
+  <!-- Reuse existing look -->
+  <link rel="stylesheet" href="style.css?v=0.10.0-dev-0030" />
+<link rel="stylesheet" href="bg.css?v=0.10.0-dev-0030" />
+<link rel="stylesheet" href="galaxies.css?v=0.10.0-dev-0030" />
+</head>
+
+<body class="galaxyPage hasBg">
+    <div id="bg" aria-hidden="true">
+    <canvas id="bgCanvas" data-bg-mode="stars"></canvas>
+    <div id="bgStars"></div>
+  </div>
+
+  <div class="overlay">
+    <div class="galaxyScreen">
+
+      <div class="galaxyHeaderBar">
+        <a class="galaxyBack galaxyButton" href="index.html">Zurück</a>
+      </div>
+
+      <div class="galaxyScroll" id="galaxyScroll">
+        <div class="galaxyTrack" id="galaxyTrack">
+          <!-- JS erzeugt Orbs + Marker + Nebel -->
+        </div>
+      </div>
+
+      <div class="galaxyFooter">
+
+        <button class="pill button galaxyButton" id="galaxyStartBtn">Level starten</button>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="systems/bg.js"></script>
+  <script src="galaxies.js"></script>
+  <script src="ui/diag-overlay.js?v=0.10.0-dev-0030" defer></script>
+</body>
+</html>

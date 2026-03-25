@@ -1,0 +1,381 @@
+/* Planet Star – Galaxy Page (full screen) */
+
+body.galaxyPage{
+  /* nutzt deinen bestehenden Space-Look aus style.css */
+}
+
+body.galaxyPage .overlay{
+  /* volle Fläche, kein Center-Panel */
+  align-items: stretch;
+  justify-content: stretch;
+  padding: 0;
+}
+
+.galaxyScreen{
+  width: 100%;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+
+    padding:
+    calc(20px + env(safe-area-inset-top))
+    12px
+    calc(12px + env(safe-area-inset-bottom));
+}
+
+/* Headerbar */
+.galaxyHeaderBar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.galaxyBack{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 12px;
+}
+
+.galaxyCornerLogo{
+  width: 56px;
+  height: 56px;
+  border-radius: 10px;
+  opacity: 0.9;
+}
+
+.galaxyTopTitle{
+  text-align: center;
+  margin-top: 8px;
+  margin-bottom: 6px;
+}
+
+.galaxyTitle{
+  margin: 0;
+}
+
+/* Scroll area */
+.galaxyScroll{
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 10px 0;
+  scroll-behavior: smooth;
+  overscroll-behavior: contain;
+}
+
+.galaxyTrack{
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Marker "kommt bald" */
+.galaxySoon{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(420px, 92%);
+
+  padding: 10px 14px;
+  border-radius: 14px;
+
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.10);
+
+  text-align: center;
+  font-size: 14px;
+  opacity: 0.95;
+}
+
+/* Orb */
+.galaxyOrb{
+  position: absolute;
+  transform: translate(-50%, -50%) scale(var(--orb-scale, 1));
+  width: 24px;
+  height: 24px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.14);
+  background: rgba(255,255,255,0.10);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: transform 220ms ease-out, box-shadow 220ms ease-out, opacity 220ms ease-out;
+will-change: transform;
+}
+
+.galaxyOrb .galaxyNum{
+  position: absolute;
+  top: 28px;
+  font-size: 11px;
+  opacity: 0.65;
+  white-space: nowrap;
+}
+
+/* Level 1–10: lila */
+.galaxyOrb.l1to10{
+  background: rgba(185, 145, 255, 0.55);
+  border-color: rgba(185, 145, 255, 0.70);
+  box-shadow: 0 0 18px rgba(185, 145, 255, 0.22);
+}
+
+/* 11+: grau */
+.galaxyOrb.locked{
+  background: rgba(255,255,255,0.07);
+  border-color: rgba(255,255,255,0.10);
+  opacity: 0.75;
+}
+
+/* freigeschaltet/geschafft (Platzhalter-States) */
+.galaxyOrb.unlocked{
+  opacity: 0.95;
+}
+
+/* ✅ Glow wenn geschafft */
+.galaxyOrb.completed{
+  box-shadow:
+    0 0 10px rgba(185, 145, 255, 0.25),
+    0 0 26px rgba(185, 145, 255, 0.40);
+  border-color: rgba(185, 145, 255, 0.85);
+}
+
+/* Selected */
+.galaxyOrb.selected{
+    /* Scale kommt jetzt aus --orb-scale */
+  transform: translate(-50%, -50%) scale(var(--orb-scale, 1));
+  box-shadow: 0 0 32px rgba(255, 235, 120, 0.25);
+  border-color: rgba(255, 235, 120, 0.55);
+}
+
+/* ✅ Nebel nur als Kreis über Orb */
+.galaxyOrb.locked::after{
+  content: "";
+  position: absolute;
+  inset: -10px;
+  border-radius: 999px;
+  background: rgba(10, 14, 26, 0.45);
+  border: 1px solid rgba(255,255,255,0.08);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+/* Footer */
+.galaxyFooter{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 10px;
+}
+
+.galaxyHint{
+  width: 100%;
+  text-align: center;
+  opacity: 0.9;
+  font-size: 13px;
+}
+
+/* Level-Labels immer weiß */
+.galaxyOrb .galaxyNum{
+  color: rgba(255,255,255,0.92);
+  opacity: 1;
+}
+
+.galaxySoon{
+  color: rgba(255,255,255,0.92);
+}
+
+.galaxyBack{
+  text-decoration: none;
+}
+
+/* Button wie im Main Menu (Ghost/neutral statt grün) */
+body.galaxyPage #galaxyStartBtn{
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.10);
+  color: rgba(255,255,255,0.92);
+}
+
+body.galaxyPage #galaxyStartBtn:disabled{
+  opacity: 0.55;
+}
+
+/* ---------- Orb Decorations ---------- */
+
+.galaxyOrb .orbRingClear,
+.galaxyOrb .orbRingHighest{
+  position: absolute;
+  inset: -9px;
+  border-radius: 999px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.galaxyOrb.planetsCleared .orbRingClear{
+  opacity: 1;
+  border: 2px solid rgba(185, 145, 255, 0.65);
+  box-shadow:
+    0 0 10px rgba(185,145,255,0.22),
+    0 0 26px rgba(185,145,255,0.35);
+}
+
+/* kleiner Stern (oben rechts, leicht überlappend) */
+.galaxyOrb .orbTinyStar{
+  position: absolute;
+  right: -8px;
+  top: -10px;
+  width: 18px;
+  height: 18px;
+  border-radius: 999px;
+
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 12px;
+  line-height: 1;
+  color: rgba(255, 235, 120, 0.98);
+
+  background: rgba(255, 235, 120, 0.18);
+  border: 1px solid rgba(255, 235, 120, 0.35);
+  box-shadow: 0 0 14px rgba(255,235,120,0.22);
+}
+
+.galaxyOrb.starCaught .orbTinyStar{
+  display: flex;
+}
+
+/* Info-Bubble neben ausgewähltem Orb */
+/* Info-Text neben ausgewähltem Orb */
+/* Info-Text neben ausgewähltem Orb (smart wrap) */
+.galaxyOrbInfo{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  color: rgba(255,255,255,0.92);
+  font-size: 6.5px;
+  line-height: 1;
+
+  pointer-events: none;
+
+  /* smart: darf umbrechen, aber nicht aus dem Screen laufen */
+  max-width: var(--info-max, 220px);
+  white-space: normal;
+
+  /* kein Background */
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.galaxyOrbInfo .sub{
+  opacity: 0.85;
+}
+
+.galaxyOrbInfo.left{
+  right: calc(100% + 45px);
+  text-align: right;
+}
+
+.galaxyOrbInfo.right{
+  left: calc(100% + 45px);
+  text-align: left;
+}
+
+/* Footer näher an den Bottom */
+.galaxyFooter{
+  padding-top: 0;
+  margin-top: auto;
+  padding-bottom: 20px;
+}
+
+/* "Zusammenbleiben" */
+.galaxyOrbInfo .nb{
+  white-space: nowrap;
+}
+
+.galaxyOrbInfo .sub{
+  opacity: 0.85;
+}
+
+/* Auto-Select (Orb in Screen-Mitte) bekommt den lila Ring */
+.galaxyOrb.centered .orbRingHighest{
+  opacity: 1;
+  inset: -13px;
+  border: 2px solid rgba(185, 145, 255, 0.45);
+}
+
+/* Kein horizontales Scroll/Pan auf iPad */
+html, body{
+  overflow-x: hidden;
+}
+
+.galaxyScroll{
+  overflow-x: hidden;
+  touch-action: pan-y;
+}
+
+.galaxyTrack{
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.galaxyOrbInfo .lvl{
+  font-weight: 800;
+  font-size: 1.5em;
+  letter-spacing: 0.02em;
+  display: inline-block;
+}
+
+/* Zurück-Button exakt wie "Level starten" */
+.galaxyBack{
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.10);
+  color: rgba(255,255,255,0.92);
+  opacity: 1;
+}
+
+/* Hover / Active identisch */
+.galaxyBack:active{
+  background: rgba(255,255,255,0.10);
+}
+
+/* Gemeinsame Button-Basis für Galaxy Page */
+.galaxyButton{
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.10);
+  color: rgba(255,255,255,0.92);
+
+  border-radius: 999px;
+  padding: 12px 18px;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Active / Tap State */
+.galaxyButton:active{
+  background: rgba(255,255,255,0.10);
+}
+
+/* Header immer über BG */
+.galaxyHeaderBar{
+  position: relative;
+  z-index: 5;
+}
+.galaxyScroll,
+.galaxyFooter{
+  position: relative;
+  z-index: 5;
+}

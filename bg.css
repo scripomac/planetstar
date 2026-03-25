@@ -1,0 +1,39 @@
+/* Planet Star – Shared animated menu background (static stars + drifting orbs) */
+
+:root{
+  --bg-space-1: #071226;
+  --bg-space-2: #030916;
+}
+
+#bg{
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  background: radial-gradient(1200px 800px at 50% 30%, rgba(255,255,255,0.06), rgba(0,0,0,0.25)),
+              radial-gradient(1400px 1000px at 50% 65%, var(--bg-space-1), var(--bg-space-2));
+}
+
+#bgCanvas{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  display:block;
+}
+
+#bgStars{
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  /* Stars are rendered on #bgCanvas now (systems/bg.js) for higher density + size variation.
+     Keep this layer as a placeholder (disabled) to avoid double starfields. */
+  display: none;
+}
+
+/* Overlay soll den Background nicht übermalen */
+.hasBg .overlay{
+  background: transparent !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}

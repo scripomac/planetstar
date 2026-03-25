@@ -1,0 +1,828 @@
+[2026-02-09 16:24:24] Release start (bump=patch)
+[2026-02-09 16:24:24] ROOT=/volume1/web/planetstar
+[2026-02-09 16:24:24] DEV=/volume1/web/planetstar/dev
+[2026-02-09 16:24:24] STABLE=/volume1/web/planetstar/stable
+[2026-02-09 16:24:24] CHANGELOG=/volume1/web/planetstar/CHANGELOG.md
+[2026-02-09 16:24:24] HOME_NOTES=/volume1/homes/Robin/planetstar_release-notes.txt
+[2026-02-09 16:24:24] Version: 0.9.7 → 0.9.8
+[2026-02-09 16:24:24] Sync dev → stable
+[2026-02-09 16:24:24] Append changelog: v0.9.8 — 2026-02-09_1624
+[2026-02-09 16:24:24] Notes found: /volume1/homes/Robin/planetstar_release-notes.txt (size: 19 bytes)
+[2026-02-09 16:24:24] Notes consumed and cleared.
+[2026-02-09 16:24:24] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.8_2026-02-09_1624.zip
+[2026-02-09 16:24:24] ✅ Release done: v0.9.8
+[2026-02-09 16:24:24] Archive: [2026-02-09 16:24:24] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.8_2026-02-09_1624.zip
+/volume1/web/planetstar/releases/PlanetStar_v0.9.8_2026-02-09_1624.zip
+[2026-02-09 21:03:29] Release start (bump=patch)
+[2026-02-09 21:03:29] ROOT=/volume1/web/planetstar
+[2026-02-09 21:03:29] DEV=/volume1/web/planetstar/dev
+[2026-02-09 21:03:29] STABLE=/volume1/web/planetstar/stable
+[2026-02-09 21:03:29] CHANGELOG=/volume1/web/planetstar/CHANGELOG.md
+[2026-02-09 21:03:29] HOME_NOTES=/volume1/homes/Robin/planetstar_release-notes.txt
+[2026-02-09 21:03:29] Version: 0.9.8 → 0.9.9
+[2026-02-09 21:03:29] Sync dev → stable
+[2026-02-09 21:03:29] Append changelog: v0.9.9 — 2026-02-09_2103
+[2026-02-09 21:03:29] Notes found: /volume1/homes/Robin/planetstar_release-notes.txt (size: 1 bytes)
+[2026-02-09 21:03:29] Notes consumed and cleared.
+[2026-02-09 21:03:29] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.9_2026-02-09_2103.zip
+[2026-02-09 21:03:29] ✅ Release done: v0.9.9
+[2026-02-09 21:03:29] Archive: [2026-02-09 21:03:29] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.9_2026-02-09_2103.zip
+/volume1/web/planetstar/releases/PlanetStar_v0.9.9_2026-02-09_2103.zip
+[2026-02-09 21:20:14] Release start (bump=patch)
+[2026-02-09 21:20:14] ROOT=/volume1/web/planetstar
+[2026-02-09 21:20:14] DEV=/volume1/web/planetstar/dev
+[2026-02-09 21:20:14] STABLE=/volume1/web/planetstar/stable
+[2026-02-09 21:20:14] CHANGELOG=/volume1/web/planetstar/CHANGELOG.md
+[2026-02-09 21:20:14] HOME_NOTES=/volume1/homes/Robin/planetstar_release-notes.txt
+[2026-02-09 21:20:14] Version: 0.9.9 → 0.9.10
+[2026-02-09 21:20:14] Sync dev → stable
+[2026-02-09 21:20:14] Append changelog: v0.9.10 — 2026-02-09_2120
+[2026-02-09 21:20:14] No notes found (file missing or empty).
+[2026-02-09 21:20:14] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.10_2026-02-09_2120.zip
+[2026-02-09 21:20:15] ✅ Release done: v0.9.10
+[2026-02-09 21:20:15] Archive: [2026-02-09 21:20:14] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.10_2026-02-09_2120.zip
+/volume1/web/planetstar/releases/PlanetStar_v0.9.10_2026-02-09_2120.zip
+[2026-02-09 21:25:15] Release start (bump=patch)
+[2026-02-09 21:25:15] ROOT=/volume1/web/planetstar
+[2026-02-09 21:25:15] DEV=/volume1/web/planetstar/dev
+[2026-02-09 21:25:15] STABLE=/volume1/web/planetstar/stable
+[2026-02-09 21:25:15] CHANGELOG=/volume1/web/planetstar/CHANGELOG.md
+[2026-02-09 21:25:15] HOME_NOTES=/volume1/homes/Robin/planetstar_release-notes.txt
+[2026-02-09 21:25:15] Version: 0.9.10 → 0.9.11
+[2026-02-09 21:25:15] Sync dev → stable
+[2026-02-09 21:25:15] Append changelog: v0.9.11 — 2026-02-09_2125
+[2026-02-09 21:25:15] No notes found (file missing or empty).
+[2026-02-09 21:25:15] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.11_2026-02-09_2125.zip
+[2026-02-09 21:25:15] ✅ Release done: v0.9.11
+[2026-02-09 21:25:15] Archive: [2026-02-09 21:25:15] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.11_2026-02-09_2125.zip
+/volume1/web/planetstar/releases/PlanetStar_v0.9.11_2026-02-09_2125.zip
+[2026-02-09 21:42:58] Release start (bump=patch)
+[2026-02-09 21:42:58] ROOT=/volume1/web/planetstar
+[2026-02-09 21:42:58] DEV=/volume1/web/planetstar/dev
+[2026-02-09 21:42:58] STABLE=/volume1/web/planetstar/stable
+[2026-02-09 21:42:58] CHANGELOG=/volume1/web/planetstar/CHANGELOG.md
+[2026-02-09 21:42:58] HOME_NOTES=/volume1/homes/Robin/planetstar_release-notes.txt
+[2026-02-09 21:42:58] Version: 0.9.11 → 0.9.12
+[2026-02-09 21:42:58] Sync dev → stable
+[2026-02-09 21:42:58] Append changelog: v0.9.12 — 2026-02-09_2142
+[2026-02-09 21:42:58] Notes found: /volume1/homes/Robin/planetstar_release-notes.txt (size: 77 bytes)
+[2026-02-09 21:42:58] Notes consumed and cleared.
+[2026-02-09 21:42:58] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.12_2026-02-09_2142.zip
+[2026-02-09 21:42:58] ✅ Release done: v0.9.12
+[2026-02-09 21:42:58] Archive: [2026-02-09 21:42:58] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.12_2026-02-09_2142.zip
+/volume1/web/planetstar/releases/PlanetStar_v0.9.12_2026-02-09_2142.zip
+[2026-02-10 17:24:26] Release start (bump=patch)
+[2026-02-10 17:24:26] ROOT=/volume1/web/planetstar
+[2026-02-10 17:24:26] DEV=/volume1/web/planetstar/dev
+[2026-02-10 17:24:26] STABLE=/volume1/web/planetstar/stable
+[2026-02-10 17:24:26] CHANGELOG=/volume1/web/planetstar/CHANGELOG.md
+[2026-02-10 17:24:26] HOME_NOTES=/volume1/homes/Robin/planetstar_release-notes.txt
+[2026-02-10 17:24:26] Version: 0.9.12 → 0.9.13
+[2026-02-10 17:24:26] Sync dev → stable
+[2026-02-10 17:24:26] Append changelog: v0.9.13 — 2026-02-10_1724
+[2026-02-10 17:24:26] Notes found: /volume1/homes/Robin/planetstar_release-notes.txt (size: 63 bytes)
+[2026-02-10 17:24:26] Notes consumed and cleared.
+[2026-02-10 17:24:26] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.13_2026-02-10_1724.zip
+[2026-02-10 17:24:26] ✅ Release done: v0.9.13
+[2026-02-10 17:24:26] Archive: [2026-02-10 17:24:26] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.13_2026-02-10_1724.zip
+/volume1/web/planetstar/releases/PlanetStar_v0.9.13_2026-02-10_1724.zip
+[2026-02-10 21:22:33] Release start (bump=patch)
+[2026-02-10 21:22:33] ROOT=/volume1/web/planetstar
+[2026-02-10 21:22:33] DEV=/volume1/web/planetstar/dev
+[2026-02-10 21:22:33] STABLE=/volume1/web/planetstar/stable
+[2026-02-10 21:22:33] CHANGELOG=/volume1/web/planetstar/CHANGELOG.md
+[2026-02-10 21:22:33] HOME_NOTES=/volume1/homes/Robin/planetstar_release-notes.txt
+[2026-02-10 21:22:33] Version: 0.9.13 → 0.9.14
+[2026-02-10 21:22:33] Sync dev → stable
+[2026-02-10 21:22:33] Append changelog: v0.9.14 — 2026-02-10_2122
+[2026-02-10 21:22:33] Notes found: /volume1/homes/Robin/planetstar_release-notes.txt (size: 75 bytes)
+[2026-02-10 21:22:33] Notes consumed and cleared.
+[2026-02-10 21:22:33] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.14_2026-02-10_2122.zip
+[2026-02-10 21:22:33] ✅ Release done: v0.9.14
+[2026-02-10 21:22:33] Archive: [2026-02-10 21:22:33] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.14_2026-02-10_2122.zip
+/volume1/web/planetstar/releases/PlanetStar_v0.9.14_2026-02-10_2122.zip
+[2026-02-11 12:25:32] Release start (bump=patch)
+[2026-02-11 12:25:32] ROOT=/volume1/web/planetstar
+[2026-02-11 12:25:32] DEV=/volume1/web/planetstar/dev
+[2026-02-11 12:25:32] STABLE=/volume1/web/planetstar/stable
+[2026-02-11 12:25:32] CHANGELOG=/volume1/web/planetstar/CHANGELOG.md
+[2026-02-11 12:25:32] HOME_NOTES=/volume1/homes/Robin/planetstar_release-notes.txt
+[2026-02-11 12:25:32] Version: 0.9.14 → 0.9.15
+[2026-02-11 12:25:33] Sync dev → stable
+[2026-02-11 12:25:33] Append changelog: v0.9.15 — 2026-02-11_1225
+[2026-02-11 12:25:33] Notes found: /volume1/homes/Robin/planetstar_release-notes.txt (size: 17 bytes)
+[2026-02-11 12:25:33] Notes consumed and cleared.
+[2026-02-11 12:25:33] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.15_2026-02-11_1225.zip
+[2026-02-11 12:25:33] ✅ Release done: v0.9.15
+[2026-02-11 12:25:33] Archive: [2026-02-11 12:25:33] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.15_2026-02-11_1225.zip
+/volume1/web/planetstar/releases/PlanetStar_v0.9.15_2026-02-11_1225.zip
+[2026-02-11 13:06:24] Release start (bump=patch)
+[2026-02-11 13:06:24] ROOT=/volume1/web/planetstar
+[2026-02-11 13:06:24] DEV=/volume1/web/planetstar/dev
+[2026-02-11 13:06:24] STABLE=/volume1/web/planetstar/stable
+[2026-02-11 13:06:24] CHANGELOG=/volume1/web/planetstar/CHANGELOG.md
+[2026-02-11 13:06:24] HOME_NOTES=/volume1/homes/Robin/planetstar_release-notes.txt
+[2026-02-11 13:06:24] Version: 0.9.15 → 0.9.16
+[2026-02-11 13:06:24] Sync dev → stable
+[2026-02-11 13:06:24] Append changelog: v0.9.16 — 2026-02-11_1306
+[2026-02-11 13:06:24] Notes found: /volume1/homes/Robin/planetstar_release-notes.txt (size: 17 bytes)
+[2026-02-11 13:06:24] Notes consumed and cleared.
+[2026-02-11 13:06:24] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.16_2026-02-11_1306.zip
+[2026-02-11 13:06:25] ✅ Release done: v0.9.16
+[2026-02-11 13:06:25] Archive: [2026-02-11 13:06:24] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.16_2026-02-11_1306.zip
+/volume1/web/planetstar/releases/PlanetStar_v0.9.16_2026-02-11_1306.zip
+[2026-02-11 13:14:06] Release start (bump=patch)
+[2026-02-11 13:14:06] ROOT=/volume1/web/planetstar
+[2026-02-11 13:14:06] DEV=/volume1/web/planetstar/dev
+[2026-02-11 13:14:06] STABLE=/volume1/web/planetstar/stable
+[2026-02-11 13:14:06] CHANGELOG=/volume1/web/planetstar/CHANGELOG.md
+[2026-02-11 13:14:06] HOME_NOTES=/volume1/homes/Robin/planetstar_release-notes.txt
+[2026-02-11 13:14:06] Version: 0.9.16 → 0.9.17
+[2026-02-11 13:14:06] Sync dev → stable
+[2026-02-11 13:14:06] Append changelog: v0.9.17 — 2026-02-11_1314
+[2026-02-11 13:14:06] Notes found: /volume1/homes/Robin/planetstar_release-notes.txt (size: 45 bytes)
+[2026-02-11 13:14:06] Notes consumed and cleared.
+[2026-02-11 13:14:06] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.17_2026-02-11_1314.zip
+[2026-02-11 13:14:06] ✅ Release done: v0.9.17
+[2026-02-11 13:14:06] Archive: [2026-02-11 13:14:06] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.17_2026-02-11_1314.zip
+/volume1/web/planetstar/releases/PlanetStar_v0.9.17_2026-02-11_1314.zip
+[2026-02-11 21:12:14] Release start (bump=patch)
+[2026-02-11 21:12:14] ROOT=/volume1/web/planetstar
+[2026-02-11 21:12:14] DEV=/volume1/web/planetstar/dev
+[2026-02-11 21:12:14] STABLE=/volume1/web/planetstar/stable
+[2026-02-11 21:12:14] CHANGELOG=/volume1/web/planetstar/CHANGELOG.md
+[2026-02-11 21:12:14] HOME_NOTES=/volume1/homes/Robin/planetstar_release-notes.txt
+[2026-02-11 21:12:14] Version: 0.9.17 → 0.9.18
+[2026-02-11 21:12:14] Sync dev → stable
+[2026-02-11 21:12:14] Append changelog: v0.9.18 — 2026-02-11_2112
+[2026-02-11 21:12:14] Notes found: /volume1/homes/Robin/planetstar_release-notes.txt (size: 25 bytes)
+[2026-02-11 21:12:14] Notes consumed and cleared.
+[2026-02-11 21:12:14] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.18_2026-02-11_2112.zip
+[2026-02-11 21:12:14] ✅ Release done: v0.9.18
+[2026-02-11 21:12:14] Archive: [2026-02-11 21:12:14] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.18_2026-02-11_2112.zip
+/volume1/web/planetstar/releases/PlanetStar_v0.9.18_2026-02-11_2112.zip
+[2026-02-11 22:40:44] Release start (bump=patch)
+[2026-02-11 22:40:44] ROOT=/volume1/web/planetstar
+[2026-02-11 22:40:44] DEV=/volume1/web/planetstar/dev
+[2026-02-11 22:40:44] STABLE=/volume1/web/planetstar/stable
+[2026-02-11 22:40:44] CHANGELOG=/volume1/web/planetstar/CHANGELOG.md
+[2026-02-11 22:40:44] HOME_NOTES=/volume1/homes/Robin/planetstar_release-notes.txt
+[2026-02-11 22:40:44] Version: 0.9.18 → 0.9.19
+[2026-02-11 22:40:44] Sync dev → stable
+[2026-02-11 22:40:44] Append changelog: v0.9.19 — 2026-02-11_2240
+[2026-02-11 22:40:44] Notes found: /volume1/homes/Robin/planetstar_release-notes.txt (size: 40 bytes)
+[2026-02-11 22:40:44] Notes consumed and cleared.
+[2026-02-11 22:40:44] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.19_2026-02-11_2240.zip
+[2026-02-11 22:40:44] ✅ Release done: v0.9.19
+[2026-02-11 22:40:44] Archive: [2026-02-11 22:40:44] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.19_2026-02-11_2240.zip
+/volume1/web/planetstar/releases/PlanetStar_v0.9.19_2026-02-11_2240.zip
+[2026-02-12 13:06:07] Release start (bump=patch)
+[2026-02-12 13:06:07] ROOT=/volume1/web/planetstar
+[2026-02-12 13:06:07] DEV=/volume1/web/planetstar/dev
+[2026-02-12 13:06:07] STABLE=/volume1/web/planetstar/stable
+[2026-02-12 13:06:07] CHANGELOG=/volume1/web/planetstar/CHANGELOG.md
+[2026-02-12 13:06:07] HOME_NOTES=/volume1/homes/Robin/planetstar_release-notes.txt
+[2026-02-12 13:06:07] Version: 0.9.19 → 0.9.20
+[2026-02-12 13:06:07] Sync dev → stable
+[2026-02-12 13:06:07] Append changelog: v0.9.20 — 2026-02-12_1306
+[2026-02-12 13:06:07] Notes found: /volume1/homes/Robin/planetstar_release-notes.txt (size: 7 bytes)
+[2026-02-12 13:06:07] Notes consumed and cleared.
+[2026-02-12 13:06:07] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.20_2026-02-12_1306.zip
+[2026-02-12 13:06:07] ✅ Release done: v0.9.20
+[2026-02-12 13:06:07] Archive: [2026-02-12 13:06:07] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.20_2026-02-12_1306.zip
+/volume1/web/planetstar/releases/PlanetStar_v0.9.20_2026-02-12_1306.zip
+[2026-02-13 13:32:52] Release start (bump=patch)
+[2026-02-13 13:32:52] ROOT=/volume1/web/planetstar
+[2026-02-13 13:32:52] DEV=/volume1/web/planetstar/dev
+[2026-02-13 13:32:52] STABLE=/volume1/web/planetstar/stable
+[2026-02-13 13:32:52] CHANGELOG=/volume1/web/planetstar/CHANGELOG.md
+[2026-02-13 13:32:52] HOME_NOTES=/volume1/homes/Robin/planetstar_release-notes.txt
+[2026-02-13 13:32:52] Version: 0.9.20 → 0.9.21
+[2026-02-13 13:32:52] Sync dev → stable
+[2026-02-13 13:32:52] Append changelog: v0.9.21 — 2026-02-13_1332
+[2026-02-13 13:32:52] Notes found: /volume1/homes/Robin/planetstar_release-notes.txt (size: 60 bytes)
+[2026-02-13 13:32:52] Notes consumed and cleared.
+[2026-02-13 13:32:52] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.21_2026-02-13_1332.zip
+[2026-02-13 13:32:52] ✅ Release done: v0.9.21
+[2026-02-13 13:32:52] Archive: [2026-02-13 13:32:52] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.21_2026-02-13_1332.zip
+/volume1/web/planetstar/releases/PlanetStar_v0.9.21_2026-02-13_1332.zip
+[2026-02-14 00:00:01] Release start (bump=patch)
+[2026-02-14 00:00:01] ROOT=/volume1/web/planetstar
+[2026-02-14 00:00:01] DEV=/volume1/web/planetstar/dev
+[2026-02-14 00:00:01] STABLE=/volume1/web/planetstar/stable
+[2026-02-14 00:00:01] CHANGELOG=/volume1/web/planetstar/CHANGELOG.md
+[2026-02-14 00:00:01] HOME_NOTES=/volume1/homes/Robin/planetstar_release-notes.txt
+[2026-02-14 00:00:01] Version: 0.9.21 → 0.9.22
+[2026-02-14 00:00:01] Sync dev → stable
+[2026-02-14 00:00:01] Append changelog: v0.9.22 — 2026-02-14_0000
+[2026-02-14 00:00:01] No notes found (file missing or empty).
+[2026-02-14 00:00:01] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.22_2026-02-14_0000.zip
+[2026-02-14 00:00:01] ✅ Release done: v0.9.22
+[2026-02-14 00:00:01] Archive: [2026-02-14 00:00:01] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.22_2026-02-14_0000.zip
+/volume1/web/planetstar/releases/PlanetStar_v0.9.22_2026-02-14_0000.zip
+[2026-02-15 00:00:01] Release start (bump=patch)
+[2026-02-15 00:00:01] ROOT=/volume1/web/planetstar
+[2026-02-15 00:00:01] DEV=/volume1/web/planetstar/dev
+[2026-02-15 00:00:01] STABLE=/volume1/web/planetstar/stable
+[2026-02-15 00:00:01] CHANGELOG=/volume1/web/planetstar/CHANGELOG.md
+[2026-02-15 00:00:01] HOME_NOTES=/volume1/homes/Robin/planetstar_release-notes.txt
+[2026-02-15 00:00:01] Version: 0.9.22 → 0.9.23
+[2026-02-15 00:00:01] Sync dev → stable
+[2026-02-15 00:00:02] Append changelog: v0.9.23 — 2026-02-15_0000
+[2026-02-15 00:00:02] No notes found (file missing or empty).
+[2026-02-15 00:00:02] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.23_2026-02-15_0000.zip
+[2026-02-15 00:00:02] ✅ Release done: v0.9.23
+[2026-02-15 00:00:02] Archive: [2026-02-15 00:00:02] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.23_2026-02-15_0000.zip
+/volume1/web/planetstar/releases/PlanetStar_v0.9.23_2026-02-15_0000.zip
+[2026-02-16 00:00:03] Release start (bump=patch)
+[2026-02-16 00:00:03] ROOT=/volume1/web/planetstar
+[2026-02-16 00:00:03] DEV=/volume1/web/planetstar/dev
+[2026-02-16 00:00:03] STABLE=/volume1/web/planetstar/stable
+[2026-02-16 00:00:03] CHANGELOG=/volume1/web/planetstar/CHANGELOG.md
+[2026-02-16 00:00:03] HOME_NOTES=/volume1/homes/Robin/planetstar_release-notes.txt
+[2026-02-16 00:00:03] Version: 0.9.23 → 0.9.24
+[2026-02-16 00:00:03] Sync dev → stable
+[2026-02-16 00:00:05] Append changelog: v0.9.24 — 2026-02-16_0000
+[2026-02-16 00:00:05] No notes found (file missing or empty).
+[2026-02-16 00:00:05] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.24_2026-02-16_0000.zip
+[2026-02-16 00:00:05] ✅ Release done: v0.9.24
+[2026-02-16 00:00:05] Archive: [2026-02-16 00:00:05] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.24_2026-02-16_0000.zip
+/volume1/web/planetstar/releases/PlanetStar_v0.9.24_2026-02-16_0000.zip
+[2026-02-16 15:06:48] Release start (bump=patch)
+[2026-02-16 15:06:48] ROOT=/volume1/web/planetstar
+[2026-02-16 15:06:48] DEV=/volume1/web/planetstar/dev
+[2026-02-16 15:06:48] STABLE=/volume1/web/planetstar/stable
+[2026-02-16 15:06:48] CHANGELOG=/volume1/web/planetstar/CHANGELOG.md
+[2026-02-16 15:06:48] HOME_NOTES=/volume1/homes/Robin/planetstar_release-notes.txt
+[2026-02-16 15:06:48] Version: 0.9.24 → 0.9.25
+[2026-02-16 15:06:48] Sync dev → stable
+[2026-02-16 15:06:48] Append changelog: v0.9.25 — 2026-02-16_1506
+[2026-02-16 15:06:48] Notes found: /volume1/homes/Robin/planetstar_release-notes.txt (size: 36 bytes)
+[2026-02-16 15:06:48] Notes consumed and cleared.
+[2026-02-16 15:06:48] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.25_2026-02-16_1506.zip
+[2026-02-16 15:06:48] ✅ Release done: v0.9.25
+[2026-02-16 15:06:48] Archive: [2026-02-16 15:06:48] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.25_2026-02-16_1506.zip
+/volume1/web/planetstar/releases/PlanetStar_v0.9.25_2026-02-16_1506.zip
+[2026-02-16 20:26:40] Release start (bump=patch)
+[2026-02-16 20:26:40] ROOT=/volume1/web/planetstar
+[2026-02-16 20:26:40] DEV=/volume1/web/planetstar/dev
+[2026-02-16 20:26:40] STABLE=/volume1/web/planetstar/stable
+[2026-02-16 20:26:40] CHANGELOG=/volume1/web/planetstar/CHANGELOG.md
+[2026-02-16 20:26:40] HOME_NOTES=/volume1/homes/Robin/planetstar_release-notes.txt
+[2026-02-16 20:26:40] Version: 0.9.25 → 0.9.26
+[2026-02-16 20:26:40] Sync dev → stable
+[2026-02-16 20:26:40] Append changelog: v0.9.26 — 2026-02-16_2026
+[2026-02-16 20:26:40] Notes found: /volume1/homes/Robin/planetstar_release-notes.txt (size: 63 bytes)
+[2026-02-16 20:26:40] Notes consumed and cleared.
+[2026-02-16 20:26:40] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.26_2026-02-16_2026.zip
+[2026-02-16 20:26:41] ✅ Release done: v0.9.26
+[2026-02-16 20:26:41] Archive: [2026-02-16 20:26:40] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.26_2026-02-16_2026.zip
+/volume1/web/planetstar/releases/PlanetStar_v0.9.26_2026-02-16_2026.zip
+[2026-02-17 00:00:01] Release start (bump=patch)
+[2026-02-17 00:00:01] ROOT=/volume1/web/planetstar
+[2026-02-17 00:00:01] DEV=/volume1/web/planetstar/dev
+[2026-02-17 00:00:01] STABLE=/volume1/web/planetstar/stable
+[2026-02-17 00:00:01] CHANGELOG=/volume1/web/planetstar/CHANGELOG.md
+[2026-02-17 00:00:01] HOME_NOTES=/volume1/homes/Robin/planetstar_release-notes.txt
+[2026-02-17 00:00:01] Version: 0.9.26 → 0.9.27
+[2026-02-17 00:00:01] Sync dev → stable
+[2026-02-17 00:00:01] Append changelog: v0.9.27 — 2026-02-17_0000
+[2026-02-17 00:00:01] No notes found (file missing or empty).
+[2026-02-17 00:00:01] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.27_2026-02-17_0000.zip
+[2026-02-17 00:00:01] ✅ Release done: v0.9.27
+[2026-02-17 00:00:01] Archive: [2026-02-17 00:00:01] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.27_2026-02-17_0000.zip
+/volume1/web/planetstar/releases/PlanetStar_v0.9.27_2026-02-17_0000.zip
+[2026-02-17 12:23:25] Release start (bump=patch)
+[2026-02-17 12:23:25] ROOT=/volume1/web/planetstar
+[2026-02-17 12:23:25] DEV=/volume1/web/planetstar/dev
+[2026-02-17 12:23:25] STABLE=/volume1/web/planetstar/stable
+[2026-02-17 12:23:25] CHANGELOG=/volume1/web/planetstar/CHANGELOG.md
+[2026-02-17 12:23:25] HOME_NOTES=/volume1/homes/Robin/planetstar_release-notes.txt
+[2026-02-17 12:23:25] Version: 0.9.27 → 0.9.28
+[2026-02-17 12:23:25] Sync dev → stable
+[2026-02-17 12:23:25] Append changelog: v0.9.28 — 2026-02-17_1223
+[2026-02-17 12:23:25] Notes found: /volume1/homes/Robin/planetstar_release-notes.txt (size: 32 bytes)
+[2026-02-17 12:23:25] Notes consumed and cleared.
+[2026-02-17 12:23:25] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.28_2026-02-17_1223.zip
+[2026-02-17 12:23:25] ✅ Release done: v0.9.28
+[2026-02-17 12:23:25] Archive: [2026-02-17 12:23:25] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.28_2026-02-17_1223.zip
+/volume1/web/planetstar/releases/PlanetStar_v0.9.28_2026-02-17_1223.zip
+[2026-02-18 00:00:03] Release start (bump=patch)
+[2026-02-18 00:00:03] ROOT=/volume1/web/planetstar
+[2026-02-18 00:00:03] DEV=/volume1/web/planetstar/dev
+[2026-02-18 00:00:03] STABLE=/volume1/web/planetstar/stable
+[2026-02-18 00:00:03] CHANGELOG=/volume1/web/planetstar/CHANGELOG.md
+[2026-02-18 00:00:03] HOME_NOTES=/volume1/homes/Robin/planetstar_release-notes.txt
+[2026-02-18 00:00:03] Version: 0.9.28 → 0.9.29
+[2026-02-18 00:00:03] Sync dev → stable
+[2026-02-18 00:00:03] Append changelog: v0.9.29 — 2026-02-18_0000
+[2026-02-18 00:00:03] No notes found (file missing or empty).
+[2026-02-18 00:00:03] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.29_2026-02-18_0000.zip
+[2026-02-18 00:00:03] ✅ Release done: v0.9.29
+[2026-02-18 00:00:03] Archive: [2026-02-18 00:00:03] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.29_2026-02-18_0000.zip
+/volume1/web/planetstar/releases/PlanetStar_v0.9.29_2026-02-18_0000.zip
+[2026-02-18 13:42:48] Release start (bump=patch)
+[2026-02-18 13:42:48] ROOT=/volume1/web/planetstar
+[2026-02-18 13:42:48] DEV=/volume1/web/planetstar/dev
+[2026-02-18 13:42:48] STABLE=/volume1/web/planetstar/stable
+[2026-02-18 13:42:48] CHANGELOG=/volume1/web/planetstar/CHANGELOG.md
+[2026-02-18 13:42:48] HOME_NOTES=/volume1/homes/Robin/planetstar_release-notes.txt
+[2026-02-18 13:42:48] Version: 0.9.29 → 0.9.30
+[2026-02-18 13:42:49] Sync dev → stable
+[2026-02-18 13:42:49] Append changelog: v0.9.30 — 2026-02-18_1342
+[2026-02-18 13:42:49] Notes found: /volume1/homes/Robin/planetstar_release-notes.txt (size: 133 bytes)
+[2026-02-18 13:42:49] Notes consumed and cleared.
+[2026-02-18 13:42:49] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.30_2026-02-18_1342.zip
+[2026-02-18 13:42:49] ✅ Release done: v0.9.30
+[2026-02-18 13:42:49] Archive: [2026-02-18 13:42:49] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.30_2026-02-18_1342.zip
+/volume1/web/planetstar/releases/PlanetStar_v0.9.30_2026-02-18_1342.zip
+[2026-02-19 00:00:02] Release start (bump=patch)
+[2026-02-19 00:00:02] ROOT=/volume1/web/planetstar
+[2026-02-19 00:00:02] DEV=/volume1/web/planetstar/dev
+[2026-02-19 00:00:02] STABLE=/volume1/web/planetstar/stable
+[2026-02-19 00:00:02] CHANGELOG=/volume1/web/planetstar/CHANGELOG.md
+[2026-02-19 00:00:02] HOME_NOTES=/volume1/homes/Robin/planetstar_release-notes.txt
+[2026-02-19 00:00:02] Version: 0.9.30 → 0.9.31
+[2026-02-19 00:00:02] Sync dev → stable
+[2026-02-19 00:00:02] Append changelog: v0.9.31 — 2026-02-19_0000
+[2026-02-19 00:00:02] No notes found (file missing or empty).
+[2026-02-19 00:00:02] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.31_2026-02-19_0000.zip
+[2026-02-19 00:00:02] ✅ Release done: v0.9.31
+[2026-02-19 00:00:02] Archive: [2026-02-19 00:00:02] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.31_2026-02-19_0000.zip
+/volume1/web/planetstar/releases/PlanetStar_v0.9.31_2026-02-19_0000.zip
+[2026-02-20 00:00:02] Release start (bump=patch)
+[2026-02-20 00:00:02] ROOT=/volume1/web/planetstar
+[2026-02-20 00:00:02] DEV=/volume1/web/planetstar/dev
+[2026-02-20 00:00:02] STABLE=/volume1/web/planetstar/stable
+[2026-02-20 00:00:02] CHANGELOG=/volume1/web/planetstar/CHANGELOG.md
+[2026-02-20 00:00:02] HOME_NOTES=/volume1/homes/Robin/planetstar_release-notes.txt
+[2026-02-20 00:00:02] Version: 0.9.31 → 0.9.32
+[2026-02-20 00:00:02] Sync dev → stable
+[2026-02-20 00:00:02] Append changelog: v0.9.32 — 2026-02-20_0000
+[2026-02-20 00:00:02] No notes found (file missing or empty).
+[2026-02-20 00:00:02] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.32_2026-02-20_0000.zip
+[2026-02-20 00:00:02] ✅ Release done: v0.9.32
+[2026-02-20 00:00:02] Archive: [2026-02-20 00:00:02] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.32_2026-02-20_0000.zip
+/volume1/web/planetstar/releases/PlanetStar_v0.9.32_2026-02-20_0000.zip
+[2026-02-21 00:00:02] Release start (bump=patch)
+[2026-02-21 00:00:02] ROOT=/volume1/web/planetstar
+[2026-02-21 00:00:02] DEV=/volume1/web/planetstar/dev
+[2026-02-21 00:00:02] STABLE=/volume1/web/planetstar/stable
+[2026-02-21 00:00:02] CHANGELOG=/volume1/web/planetstar/CHANGELOG.md
+[2026-02-21 00:00:02] HOME_NOTES=/volume1/homes/Robin/planetstar_release-notes.txt
+[2026-02-21 00:00:02] Version: 0.9.32 → 0.9.33
+[2026-02-21 00:00:02] Sync dev → stable
+[2026-02-21 00:00:04] Append changelog: v0.9.33 — 2026-02-21_0000
+[2026-02-21 00:00:04] No notes found (file missing or empty).
+[2026-02-21 00:00:04] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.33_2026-02-21_0000.zip
+[2026-02-21 00:00:04] ✅ Release done: v0.9.33
+[2026-02-21 00:00:04] Archive: [2026-02-21 00:00:04] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.33_2026-02-21_0000.zip
+/volume1/web/planetstar/releases/PlanetStar_v0.9.33_2026-02-21_0000.zip
+[2026-02-22 00:00:02] Release start (bump=patch)
+[2026-02-22 00:00:02] ROOT=/volume1/web/planetstar
+[2026-02-22 00:00:02] DEV=/volume1/web/planetstar/dev
+[2026-02-22 00:00:02] STABLE=/volume1/web/planetstar/stable
+[2026-02-22 00:00:02] CHANGELOG=/volume1/web/planetstar/CHANGELOG.md
+[2026-02-22 00:00:02] HOME_NOTES=/volume1/homes/Robin/planetstar_release-notes.txt
+[2026-02-22 00:00:02] Version: 0.9.33 → 0.9.34
+[2026-02-22 00:00:02] Sync dev → stable
+[2026-02-22 00:00:03] Append changelog: v0.9.34 — 2026-02-22_0000
+[2026-02-22 00:00:03] No notes found (file missing or empty).
+[2026-02-22 00:00:03] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.34_2026-02-22_0000.zip
+[2026-02-22 00:00:03] ✅ Release done: v0.9.34
+[2026-02-22 00:00:03] Archive: [2026-02-22 00:00:03] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.34_2026-02-22_0000.zip
+/volume1/web/planetstar/releases/PlanetStar_v0.9.34_2026-02-22_0000.zip
+[2026-02-23 00:00:04] Release start (bump=patch)
+[2026-02-23 00:00:04] ROOT=/volume1/web/planetstar
+[2026-02-23 00:00:04] DEV=/volume1/web/planetstar/dev
+[2026-02-23 00:00:04] STABLE=/volume1/web/planetstar/stable
+[2026-02-23 00:00:04] CHANGELOG=/volume1/web/planetstar/CHANGELOG.md
+[2026-02-23 00:00:04] HOME_NOTES=/volume1/homes/Robin/planetstar_release-notes.txt
+[2026-02-23 00:00:04] Version: 0.9.34 → 0.9.35
+[2026-02-23 00:00:04] Sync dev → stable
+[2026-02-23 00:00:06] Append changelog: v0.9.35 — 2026-02-23_0000
+[2026-02-23 00:00:06] No notes found (file missing or empty).
+[2026-02-23 00:00:06] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.35_2026-02-23_0000.zip
+[2026-02-23 00:00:06] ✅ Release done: v0.9.35
+[2026-02-23 00:00:06] Archive: [2026-02-23 00:00:06] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.35_2026-02-23_0000.zip
+/volume1/web/planetstar/releases/PlanetStar_v0.9.35_2026-02-23_0000.zip
+[2026-02-24 00:00:02] Release start (bump=patch)
+[2026-02-24 00:00:02] ROOT=/volume1/web/planetstar
+[2026-02-24 00:00:02] DEV=/volume1/web/planetstar/dev
+[2026-02-24 00:00:02] STABLE=/volume1/web/planetstar/stable
+[2026-02-24 00:00:02] CHANGELOG=/volume1/web/planetstar/CHANGELOG.md
+[2026-02-24 00:00:02] HOME_NOTES=/volume1/homes/Robin/planetstar_release-notes.txt
+[2026-02-24 00:00:02] Version: 0.9.35 → 0.9.36
+[2026-02-24 00:00:02] Sync dev → stable
+[2026-02-24 00:00:04] Append changelog: v0.9.36 — 2026-02-24_0000
+[2026-02-24 00:00:04] No notes found (file missing or empty).
+[2026-02-24 00:00:04] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.36_2026-02-24_0000.zip
+[2026-02-24 00:00:04] ✅ Release done: v0.9.36
+[2026-02-24 00:00:04] Archive: [2026-02-24 00:00:04] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.36_2026-02-24_0000.zip
+/volume1/web/planetstar/releases/PlanetStar_v0.9.36_2026-02-24_0000.zip
+[2026-02-25 00:00:03] Release start (bump=patch)
+[2026-02-25 00:00:03] ROOT=/volume1/web/planetstar
+[2026-02-25 00:00:03] DEV=/volume1/web/planetstar/dev
+[2026-02-25 00:00:03] STABLE=/volume1/web/planetstar/stable
+[2026-02-25 00:00:03] CHANGELOG=/volume1/web/planetstar/CHANGELOG.md
+[2026-02-25 00:00:03] HOME_NOTES=/volume1/homes/Robin/planetstar_release-notes.txt
+[2026-02-25 00:00:03] Version: 0.9.36 → 0.9.37
+[2026-02-25 00:00:03] Sync dev → stable
+[2026-02-25 00:00:04] Append changelog: v0.9.37 — 2026-02-25_0000
+[2026-02-25 00:00:05] No notes found (file missing or empty).
+[2026-02-25 00:00:05] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.37_2026-02-25_0000.zip
+[2026-02-25 00:00:05] ✅ Release done: v0.9.37
+[2026-02-25 00:00:05] Archive: [2026-02-25 00:00:05] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.37_2026-02-25_0000.zip
+/volume1/web/planetstar/releases/PlanetStar_v0.9.37_2026-02-25_0000.zip
+[2026-02-26 00:00:02] Release start (bump=patch)
+[2026-02-26 00:00:02] ROOT=/volume1/web/planetstar
+[2026-02-26 00:00:02] DEV=/volume1/web/planetstar/dev
+[2026-02-26 00:00:02] STABLE=/volume1/web/planetstar/stable
+[2026-02-26 00:00:02] CHANGELOG=/volume1/web/planetstar/CHANGELOG.md
+[2026-02-26 00:00:02] HOME_NOTES=/volume1/homes/Robin/planetstar_release-notes.txt
+[2026-02-26 00:00:02] Version: 0.9.37 → 0.9.38
+[2026-02-26 00:00:02] Sync dev → stable
+[2026-02-26 00:00:03] Append changelog: v0.9.38 — 2026-02-26_0000
+[2026-02-26 00:00:03] No notes found (file missing or empty).
+[2026-02-26 00:00:03] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.38_2026-02-26_0000.zip
+[2026-02-26 00:00:03] ✅ Release done: v0.9.38
+[2026-02-26 00:00:03] Archive: [2026-02-26 00:00:03] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.38_2026-02-26_0000.zip
+/volume1/web/planetstar/releases/PlanetStar_v0.9.38_2026-02-26_0000.zip
+[2026-02-27 00:00:04] Release start (bump=patch)
+[2026-02-27 00:00:04] ROOT=/volume1/web/planetstar
+[2026-02-27 00:00:04] DEV=/volume1/web/planetstar/dev
+[2026-02-27 00:00:04] STABLE=/volume1/web/planetstar/stable
+[2026-02-27 00:00:04] CHANGELOG=/volume1/web/planetstar/CHANGELOG.md
+[2026-02-27 00:00:04] HOME_NOTES=/volume1/homes/Robin/planetstar_release-notes.txt
+[2026-02-27 00:00:04] Version: 0.9.38 → 0.9.39
+[2026-02-27 00:00:04] Sync dev → stable
+[2026-02-27 00:00:05] Append changelog: v0.9.39 — 2026-02-27_0000
+[2026-02-27 00:00:05] No notes found (file missing or empty).
+[2026-02-27 00:00:05] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.39_2026-02-27_0000.zip
+[2026-02-27 00:00:05] ✅ Release done: v0.9.39
+[2026-02-27 00:00:05] Archive: [2026-02-27 00:00:05] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.39_2026-02-27_0000.zip
+/volume1/web/planetstar/releases/PlanetStar_v0.9.39_2026-02-27_0000.zip
+[2026-02-28 00:00:05] Release start (bump=patch)
+[2026-02-28 00:00:05] ROOT=/volume1/web/planetstar
+[2026-02-28 00:00:05] DEV=/volume1/web/planetstar/dev
+[2026-02-28 00:00:05] STABLE=/volume1/web/planetstar/stable
+[2026-02-28 00:00:05] CHANGELOG=/volume1/web/planetstar/CHANGELOG.md
+[2026-02-28 00:00:05] HOME_NOTES=/volume1/homes/Robin/planetstar_release-notes.txt
+[2026-02-28 00:00:05] Version: 0.9.39 → 0.9.40
+[2026-02-28 00:00:05] Sync dev → stable
+[2026-02-28 00:00:05] Append changelog: v0.9.40 — 2026-02-28_0000
+[2026-02-28 00:00:05] No notes found (file missing or empty).
+[2026-02-28 00:00:05] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.40_2026-02-28_0000.zip
+[2026-02-28 00:00:05] ✅ Release done: v0.9.40
+[2026-02-28 00:00:05] Archive: [2026-02-28 00:00:05] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.40_2026-02-28_0000.zip
+/volume1/web/planetstar/releases/PlanetStar_v0.9.40_2026-02-28_0000.zip
+[2026-03-01 00:00:03] Release start (bump=patch)
+[2026-03-01 00:00:03] ROOT=/volume1/web/planetstar
+[2026-03-01 00:00:03] DEV=/volume1/web/planetstar/dev
+[2026-03-01 00:00:03] STABLE=/volume1/web/planetstar/stable
+[2026-03-01 00:00:03] CHANGELOG=/volume1/web/planetstar/CHANGELOG.md
+[2026-03-01 00:00:03] HOME_NOTES=/volume1/homes/Robin/planetstar_release-notes.txt
+[2026-03-01 00:00:03] Version: 0.9.40 → 0.9.41
+[2026-03-01 00:00:03] Sync dev → stable
+[2026-03-01 00:00:03] Append changelog: v0.9.41 — 2026-03-01_0000
+[2026-03-01 00:00:03] No notes found (file missing or empty).
+[2026-03-01 00:00:03] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.41_2026-03-01_0000.zip
+[2026-03-01 00:00:03] ✅ Release done: v0.9.41
+[2026-03-01 00:00:03] Archive: [2026-03-01 00:00:03] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.41_2026-03-01_0000.zip
+/volume1/web/planetstar/releases/PlanetStar_v0.9.41_2026-03-01_0000.zip
+[2026-03-02 00:00:04] Release start (bump=patch)
+[2026-03-02 00:00:04] ROOT=/volume1/web/planetstar
+[2026-03-02 00:00:04] DEV=/volume1/web/planetstar/dev
+[2026-03-02 00:00:04] STABLE=/volume1/web/planetstar/stable
+[2026-03-02 00:00:04] CHANGELOG=/volume1/web/planetstar/CHANGELOG.md
+[2026-03-02 00:00:04] HOME_NOTES=/volume1/homes/Robin/planetstar_release-notes.txt
+[2026-03-02 00:00:04] Version: 0.9.41 → 0.9.42
+[2026-03-02 00:00:04] Sync dev → stable
+[2026-03-02 00:00:08] Append changelog: v0.9.42 — 2026-03-02_0000
+[2026-03-02 00:00:08] No notes found (file missing or empty).
+[2026-03-02 00:00:08] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.42_2026-03-02_0000.zip
+[2026-03-02 00:00:08] ✅ Release done: v0.9.42
+[2026-03-02 00:00:08] Archive: [2026-03-02 00:00:08] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.42_2026-03-02_0000.zip
+/volume1/web/planetstar/releases/PlanetStar_v0.9.42_2026-03-02_0000.zip
+[2026-03-03 00:00:06] Release start (bump=patch)
+[2026-03-03 00:00:06] ROOT=/volume1/web/planetstar
+[2026-03-03 00:00:06] DEV=/volume1/web/planetstar/dev
+[2026-03-03 00:00:06] STABLE=/volume1/web/planetstar/stable
+[2026-03-03 00:00:06] CHANGELOG=/volume1/web/planetstar/CHANGELOG.md
+[2026-03-03 00:00:06] HOME_NOTES=/volume1/homes/Robin/planetstar_release-notes.txt
+[2026-03-03 00:00:06] Version: 0.9.42 → 0.9.43
+[2026-03-03 00:00:06] Sync dev → stable
+[2026-03-03 00:00:06] Append changelog: v0.9.43 — 2026-03-03_0000
+[2026-03-03 00:00:06] No notes found (file missing or empty).
+[2026-03-03 00:00:06] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.43_2026-03-03_0000.zip
+[2026-03-03 00:00:06] ✅ Release done: v0.9.43
+[2026-03-03 00:00:06] Archive: [2026-03-03 00:00:06] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.43_2026-03-03_0000.zip
+/volume1/web/planetstar/releases/PlanetStar_v0.9.43_2026-03-03_0000.zip
+[2026-03-04 00:00:03] Release start (bump=patch)
+[2026-03-04 00:00:03] ROOT=/volume1/web/planetstar
+[2026-03-04 00:00:03] DEV=/volume1/web/planetstar/dev
+[2026-03-04 00:00:03] STABLE=/volume1/web/planetstar/stable
+[2026-03-04 00:00:03] CHANGELOG=/volume1/web/planetstar/CHANGELOG.md
+[2026-03-04 00:00:03] HOME_NOTES=/volume1/homes/Robin/planetstar_release-notes.txt
+[2026-03-04 00:00:03] Version: 0.9.43 → 0.9.44
+[2026-03-04 00:00:03] Sync dev → stable
+[2026-03-04 00:00:05] Append changelog: v0.9.44 — 2026-03-04_0000
+[2026-03-04 00:00:05] No notes found (file missing or empty).
+[2026-03-04 00:00:05] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.44_2026-03-04_0000.zip
+[2026-03-04 00:00:05] ✅ Release done: v0.9.44
+[2026-03-04 00:00:05] Archive: [2026-03-04 00:00:05] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.44_2026-03-04_0000.zip
+/volume1/web/planetstar/releases/PlanetStar_v0.9.44_2026-03-04_0000.zip
+[2026-03-05 00:00:03] Release start (bump=patch)
+[2026-03-05 00:00:03] ROOT=/volume1/web/planetstar
+[2026-03-05 00:00:03] DEV=/volume1/web/planetstar/dev
+[2026-03-05 00:00:03] STABLE=/volume1/web/planetstar/stable
+[2026-03-05 00:00:03] CHANGELOG=/volume1/web/planetstar/CHANGELOG.md
+[2026-03-05 00:00:03] HOME_NOTES=/volume1/homes/Robin/planetstar_release-notes.txt
+[2026-03-05 00:00:03] Version: 0.9.44 → 0.9.45
+[2026-03-05 00:00:03] Sync dev → stable
+[2026-03-05 00:00:03] Append changelog: v0.9.45 — 2026-03-05_0000
+[2026-03-05 00:00:03] No notes found (file missing or empty).
+[2026-03-05 00:00:03] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.45_2026-03-05_0000.zip
+[2026-03-05 00:00:03] ✅ Release done: v0.9.45
+[2026-03-05 00:00:03] Archive: [2026-03-05 00:00:03] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.45_2026-03-05_0000.zip
+/volume1/web/planetstar/releases/PlanetStar_v0.9.45_2026-03-05_0000.zip
+[2026-03-06 00:00:03] Release start (bump=patch)
+[2026-03-06 00:00:03] ROOT=/volume1/web/planetstar
+[2026-03-06 00:00:03] DEV=/volume1/web/planetstar/dev
+[2026-03-06 00:00:03] STABLE=/volume1/web/planetstar/stable
+[2026-03-06 00:00:03] CHANGELOG=/volume1/web/planetstar/CHANGELOG.md
+[2026-03-06 00:00:03] HOME_NOTES=/volume1/homes/Robin/planetstar_release-notes.txt
+[2026-03-06 00:00:04] Version: 0.9.45 → 0.9.46
+[2026-03-06 00:00:04] Sync dev → stable
+[2026-03-06 00:00:04] Append changelog: v0.9.46 — 2026-03-06_0000
+[2026-03-06 00:00:04] No notes found (file missing or empty).
+[2026-03-06 00:00:04] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.46_2026-03-06_0000.zip
+[2026-03-06 00:00:04] ✅ Release done: v0.9.46
+[2026-03-06 00:00:04] Archive: [2026-03-06 00:00:04] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.46_2026-03-06_0000.zip
+/volume1/web/planetstar/releases/PlanetStar_v0.9.46_2026-03-06_0000.zip
+[2026-03-07 00:00:03] Release start (bump=patch)
+[2026-03-07 00:00:03] ROOT=/volume1/web/planetstar
+[2026-03-07 00:00:03] DEV=/volume1/web/planetstar/dev
+[2026-03-07 00:00:03] STABLE=/volume1/web/planetstar/stable
+[2026-03-07 00:00:03] CHANGELOG=/volume1/web/planetstar/CHANGELOG.md
+[2026-03-07 00:00:03] HOME_NOTES=/volume1/homes/Robin/planetstar_release-notes.txt
+[2026-03-07 00:00:03] Version: 0.9.46 → 0.9.47
+[2026-03-07 00:00:03] Sync dev → stable
+[2026-03-07 00:00:04] Append changelog: v0.9.47 — 2026-03-07_0000
+[2026-03-07 00:00:04] No notes found (file missing or empty).
+[2026-03-07 00:00:04] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.47_2026-03-07_0000.zip
+[2026-03-07 00:00:04] ✅ Release done: v0.9.47
+[2026-03-07 00:00:04] Archive: [2026-03-07 00:00:04] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.47_2026-03-07_0000.zip
+/volume1/web/planetstar/releases/PlanetStar_v0.9.47_2026-03-07_0000.zip
+[2026-03-08 00:00:03] Release start (bump=patch)
+[2026-03-08 00:00:03] ROOT=/volume1/web/planetstar
+[2026-03-08 00:00:03] DEV=/volume1/web/planetstar/dev
+[2026-03-08 00:00:03] STABLE=/volume1/web/planetstar/stable
+[2026-03-08 00:00:03] CHANGELOG=/volume1/web/planetstar/CHANGELOG.md
+[2026-03-08 00:00:03] HOME_NOTES=/volume1/homes/Robin/planetstar_release-notes.txt
+[2026-03-08 00:00:03] Version: 0.9.47 → 0.9.48
+[2026-03-08 00:00:03] Sync dev → stable
+[2026-03-08 00:00:04] Append changelog: v0.9.48 — 2026-03-08_0000
+[2026-03-08 00:00:04] No notes found (file missing or empty).
+[2026-03-08 00:00:04] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.48_2026-03-08_0000.zip
+[2026-03-08 00:00:04] ✅ Release done: v0.9.48
+[2026-03-08 00:00:04] Archive: [2026-03-08 00:00:04] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.48_2026-03-08_0000.zip
+/volume1/web/planetstar/releases/PlanetStar_v0.9.48_2026-03-08_0000.zip
+[2026-03-09 00:00:04] Release start (bump=patch)
+[2026-03-09 00:00:04] ROOT=/volume1/web/planetstar
+[2026-03-09 00:00:04] DEV=/volume1/web/planetstar/dev
+[2026-03-09 00:00:04] STABLE=/volume1/web/planetstar/stable
+[2026-03-09 00:00:04] CHANGELOG=/volume1/web/planetstar/CHANGELOG.md
+[2026-03-09 00:00:04] HOME_NOTES=/volume1/homes/Robin/planetstar_release-notes.txt
+[2026-03-09 00:00:04] Version: 0.9.48 → 0.9.49
+[2026-03-09 00:00:04] Sync dev → stable
+[2026-03-09 00:00:06] Append changelog: v0.9.49 — 2026-03-09_0000
+[2026-03-09 00:00:06] No notes found (file missing or empty).
+[2026-03-09 00:00:06] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.49_2026-03-09_0000.zip
+[2026-03-09 00:00:06] ✅ Release done: v0.9.49
+[2026-03-09 00:00:06] Archive: [2026-03-09 00:00:06] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.49_2026-03-09_0000.zip
+/volume1/web/planetstar/releases/PlanetStar_v0.9.49_2026-03-09_0000.zip
+[2026-03-10 00:00:05] Release start (bump=patch)
+[2026-03-10 00:00:05] ROOT=/volume1/web/planetstar
+[2026-03-10 00:00:05] DEV=/volume1/web/planetstar/dev
+[2026-03-10 00:00:05] STABLE=/volume1/web/planetstar/stable
+[2026-03-10 00:00:05] CHANGELOG=/volume1/web/planetstar/CHANGELOG.md
+[2026-03-10 00:00:05] HOME_NOTES=/volume1/homes/Robin/planetstar_release-notes.txt
+[2026-03-10 00:00:05] Version: 0.9.49 → 0.9.50
+[2026-03-10 00:00:05] Sync dev → stable
+[2026-03-10 00:00:06] Append changelog: v0.9.50 — 2026-03-10_0000
+[2026-03-10 00:00:06] No notes found (file missing or empty).
+[2026-03-10 00:00:06] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.50_2026-03-10_0000.zip
+[2026-03-10 00:00:06] ✅ Release done: v0.9.50
+[2026-03-10 00:00:06] Archive: [2026-03-10 00:00:06] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.50_2026-03-10_0000.zip
+/volume1/web/planetstar/releases/PlanetStar_v0.9.50_2026-03-10_0000.zip
+[2026-03-11 00:00:03] Release start (bump=patch)
+[2026-03-11 00:00:03] ROOT=/volume1/web/planetstar
+[2026-03-11 00:00:03] DEV=/volume1/web/planetstar/dev
+[2026-03-11 00:00:03] STABLE=/volume1/web/planetstar/stable
+[2026-03-11 00:00:03] CHANGELOG=/volume1/web/planetstar/CHANGELOG.md
+[2026-03-11 00:00:03] HOME_NOTES=/volume1/homes/Robin/planetstar_release-notes.txt
+[2026-03-11 00:00:03] Version: 0.9.50 → 0.9.51
+[2026-03-11 00:00:03] Sync dev → stable
+[2026-03-11 00:00:05] Append changelog: v0.9.51 — 2026-03-11_0000
+[2026-03-11 00:00:05] No notes found (file missing or empty).
+[2026-03-11 00:00:05] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.51_2026-03-11_0000.zip
+[2026-03-11 00:00:05] ✅ Release done: v0.9.51
+[2026-03-11 00:00:05] Archive: [2026-03-11 00:00:05] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.51_2026-03-11_0000.zip
+/volume1/web/planetstar/releases/PlanetStar_v0.9.51_2026-03-11_0000.zip
+[2026-03-12 00:00:07] Release start (bump=patch)
+[2026-03-12 00:00:07] ROOT=/volume1/web/planetstar
+[2026-03-12 00:00:07] DEV=/volume1/web/planetstar/dev
+[2026-03-12 00:00:07] STABLE=/volume1/web/planetstar/stable
+[2026-03-12 00:00:07] CHANGELOG=/volume1/web/planetstar/CHANGELOG.md
+[2026-03-12 00:00:07] HOME_NOTES=/volume1/homes/Robin/planetstar_release-notes.txt
+[2026-03-12 00:00:07] Version: 0.9.51 → 0.9.52
+[2026-03-12 00:00:07] Sync dev → stable
+[2026-03-12 00:00:08] Append changelog: v0.9.52 — 2026-03-12_0000
+[2026-03-12 00:00:08] No notes found (file missing or empty).
+[2026-03-12 00:00:08] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.52_2026-03-12_0000.zip
+[2026-03-12 00:00:09] ✅ Release done: v0.9.52
+[2026-03-12 00:00:09] Archive: [2026-03-12 00:00:08] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.52_2026-03-12_0000.zip
+/volume1/web/planetstar/releases/PlanetStar_v0.9.52_2026-03-12_0000.zip
+[2026-03-13 00:00:02] Release start (bump=patch)
+[2026-03-13 00:00:02] ROOT=/volume1/web/planetstar
+[2026-03-13 00:00:02] DEV=/volume1/web/planetstar/dev
+[2026-03-13 00:00:02] STABLE=/volume1/web/planetstar/stable
+[2026-03-13 00:00:02] CHANGELOG=/volume1/web/planetstar/CHANGELOG.md
+[2026-03-13 00:00:02] HOME_NOTES=/volume1/homes/Robin/planetstar_release-notes.txt
+[2026-03-13 00:00:02] Version: 0.9.52 → 0.9.53
+[2026-03-13 00:00:02] Sync dev → stable
+[2026-03-13 00:00:06] Append changelog: v0.9.53 — 2026-03-13_0000
+[2026-03-13 00:00:06] No notes found (file missing or empty).
+[2026-03-13 00:00:06] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.53_2026-03-13_0000.zip
+[2026-03-13 00:00:06] ✅ Release done: v0.9.53
+[2026-03-13 00:00:06] Archive: [2026-03-13 00:00:06] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.53_2026-03-13_0000.zip
+/volume1/web/planetstar/releases/PlanetStar_v0.9.53_2026-03-13_0000.zip
+[2026-03-14 00:00:03] Release start (bump=patch)
+[2026-03-14 00:00:03] ROOT=/volume1/web/planetstar
+[2026-03-14 00:00:03] DEV=/volume1/web/planetstar/dev
+[2026-03-14 00:00:03] STABLE=/volume1/web/planetstar/stable
+[2026-03-14 00:00:03] CHANGELOG=/volume1/web/planetstar/CHANGELOG.md
+[2026-03-14 00:00:03] HOME_NOTES=/volume1/homes/Robin/planetstar_release-notes.txt
+[2026-03-14 00:00:03] Version: 0.9.53 → 0.9.54
+[2026-03-14 00:00:03] Sync dev → stable
+[2026-03-14 00:00:06] Append changelog: v0.9.54 — 2026-03-14_0000
+[2026-03-14 00:00:06] No notes found (file missing or empty).
+[2026-03-14 00:00:06] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.54_2026-03-14_0000.zip
+[2026-03-14 00:00:06] ✅ Release done: v0.9.54
+[2026-03-14 00:00:06] Archive: [2026-03-14 00:00:06] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.54_2026-03-14_0000.zip
+/volume1/web/planetstar/releases/PlanetStar_v0.9.54_2026-03-14_0000.zip
+[2026-03-15 00:00:06] Release start (bump=patch)
+[2026-03-15 00:00:06] ROOT=/volume1/web/planetstar
+[2026-03-15 00:00:06] DEV=/volume1/web/planetstar/dev
+[2026-03-15 00:00:06] STABLE=/volume1/web/planetstar/stable
+[2026-03-15 00:00:06] CHANGELOG=/volume1/web/planetstar/CHANGELOG.md
+[2026-03-15 00:00:06] HOME_NOTES=/volume1/homes/Robin/planetstar_release-notes.txt
+[2026-03-15 00:00:06] Version: 0.9.54 → 0.9.55
+[2026-03-15 00:00:06] Sync dev → stable
+[2026-03-15 00:00:07] Append changelog: v0.9.55 — 2026-03-15_0000
+[2026-03-15 00:00:07] No notes found (file missing or empty).
+[2026-03-15 00:00:07] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.55_2026-03-15_0000.zip
+[2026-03-15 00:00:07] ✅ Release done: v0.9.55
+[2026-03-15 00:00:07] Archive: [2026-03-15 00:00:07] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.55_2026-03-15_0000.zip
+/volume1/web/planetstar/releases/PlanetStar_v0.9.55_2026-03-15_0000.zip
+[2026-03-16 00:00:03] Release start (bump=patch)
+[2026-03-16 00:00:03] ROOT=/volume1/web/planetstar
+[2026-03-16 00:00:03] DEV=/volume1/web/planetstar/dev
+[2026-03-16 00:00:03] STABLE=/volume1/web/planetstar/stable
+[2026-03-16 00:00:03] CHANGELOG=/volume1/web/planetstar/CHANGELOG.md
+[2026-03-16 00:00:03] HOME_NOTES=/volume1/homes/Robin/planetstar_release-notes.txt
+[2026-03-16 00:00:03] Version: 0.9.55 → 0.9.56
+[2026-03-16 00:00:03] Sync dev → stable
+[2026-03-16 00:00:06] Append changelog: v0.9.56 — 2026-03-16_0000
+[2026-03-16 00:00:06] No notes found (file missing or empty).
+[2026-03-16 00:00:06] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.56_2026-03-16_0000.zip
+[2026-03-16 00:00:06] ✅ Release done: v0.9.56
+[2026-03-16 00:00:06] Archive: [2026-03-16 00:00:06] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.56_2026-03-16_0000.zip
+/volume1/web/planetstar/releases/PlanetStar_v0.9.56_2026-03-16_0000.zip
+[2026-03-17 00:00:07] Release start (bump=patch)
+[2026-03-17 00:00:07] ROOT=/volume1/web/planetstar
+[2026-03-17 00:00:07] DEV=/volume1/web/planetstar/dev
+[2026-03-17 00:00:07] STABLE=/volume1/web/planetstar/stable
+[2026-03-17 00:00:07] CHANGELOG=/volume1/web/planetstar/CHANGELOG.md
+[2026-03-17 00:00:07] HOME_NOTES=/volume1/homes/Robin/planetstar_release-notes.txt
+[2026-03-17 00:00:07] Version: 0.9.56 → 0.9.57
+[2026-03-17 00:00:07] Sync dev → stable
+[2026-03-17 00:00:09] Append changelog: v0.9.57 — 2026-03-17_0000
+[2026-03-17 00:00:09] No notes found (file missing or empty).
+[2026-03-17 00:00:09] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.57_2026-03-17_0000.zip
+[2026-03-17 00:00:09] ✅ Release done: v0.9.57
+[2026-03-17 00:00:09] Archive: [2026-03-17 00:00:09] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.57_2026-03-17_0000.zip
+/volume1/web/planetstar/releases/PlanetStar_v0.9.57_2026-03-17_0000.zip
+[2026-03-18 00:00:06] Release start (bump=patch)
+[2026-03-18 00:00:06] ROOT=/volume1/web/planetstar
+[2026-03-18 00:00:06] DEV=/volume1/web/planetstar/dev
+[2026-03-18 00:00:06] STABLE=/volume1/web/planetstar/stable
+[2026-03-18 00:00:06] CHANGELOG=/volume1/web/planetstar/CHANGELOG.md
+[2026-03-18 00:00:06] HOME_NOTES=/volume1/homes/Robin/planetstar_release-notes.txt
+[2026-03-18 00:00:06] Version: 0.9.57 → 0.9.58
+[2026-03-18 00:00:06] Sync dev → stable
+[2026-03-18 00:00:07] Append changelog: v0.9.58 — 2026-03-18_0000
+[2026-03-18 00:00:07] No notes found (file missing or empty).
+[2026-03-18 00:00:07] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.58_2026-03-18_0000.zip
+[2026-03-18 00:00:07] ✅ Release done: v0.9.58
+[2026-03-18 00:00:07] Archive: [2026-03-18 00:00:07] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.58_2026-03-18_0000.zip
+/volume1/web/planetstar/releases/PlanetStar_v0.9.58_2026-03-18_0000.zip
+[2026-03-19 00:00:03] Release start (bump=patch)
+[2026-03-19 00:00:03] ROOT=/volume1/web/planetstar
+[2026-03-19 00:00:03] DEV=/volume1/web/planetstar/dev
+[2026-03-19 00:00:03] STABLE=/volume1/web/planetstar/stable
+[2026-03-19 00:00:03] CHANGELOG=/volume1/web/planetstar/CHANGELOG.md
+[2026-03-19 00:00:03] HOME_NOTES=/volume1/homes/Robin/planetstar_release-notes.txt
+[2026-03-19 00:00:03] Version: 0.9.58 → 0.9.59
+[2026-03-19 00:00:03] Sync dev → stable
+[2026-03-19 00:00:05] Append changelog: v0.9.59 — 2026-03-19_0000
+[2026-03-19 00:00:05] No notes found (file missing or empty).
+[2026-03-19 00:00:05] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.59_2026-03-19_0000.zip
+[2026-03-19 00:00:05] ✅ Release done: v0.9.59
+[2026-03-19 00:00:05] Archive: [2026-03-19 00:00:05] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.59_2026-03-19_0000.zip
+/volume1/web/planetstar/releases/PlanetStar_v0.9.59_2026-03-19_0000.zip
+[2026-03-20 00:00:04] Release start (bump=patch)
+[2026-03-20 00:00:05] ROOT=/volume1/web/planetstar
+[2026-03-20 00:00:05] DEV=/volume1/web/planetstar/dev
+[2026-03-20 00:00:05] STABLE=/volume1/web/planetstar/stable
+[2026-03-20 00:00:05] CHANGELOG=/volume1/web/planetstar/CHANGELOG.md
+[2026-03-20 00:00:05] HOME_NOTES=/volume1/homes/Robin/planetstar_release-notes.txt
+[2026-03-20 00:00:05] Version: 0.9.59 → 0.9.60
+[2026-03-20 00:00:05] Sync dev → stable
+[2026-03-20 00:00:06] Append changelog: v0.9.60 — 2026-03-20_0000
+[2026-03-20 00:00:06] No notes found (file missing or empty).
+[2026-03-20 00:00:06] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.60_2026-03-20_0000.zip
+[2026-03-20 00:00:06] ✅ Release done: v0.9.60
+[2026-03-20 00:00:06] Archive: [2026-03-20 00:00:06] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.60_2026-03-20_0000.zip
+/volume1/web/planetstar/releases/PlanetStar_v0.9.60_2026-03-20_0000.zip
+[2026-03-21 00:00:04] Release start (bump=patch)
+[2026-03-21 00:00:04] ROOT=/volume1/web/planetstar
+[2026-03-21 00:00:04] DEV=/volume1/web/planetstar/dev
+[2026-03-21 00:00:04] STABLE=/volume1/web/planetstar/stable
+[2026-03-21 00:00:04] CHANGELOG=/volume1/web/planetstar/CHANGELOG.md
+[2026-03-21 00:00:04] HOME_NOTES=/volume1/homes/Robin/planetstar_release-notes.txt
+[2026-03-21 00:00:04] Version: 0.9.60 → 0.9.61
+[2026-03-21 00:00:04] Sync dev → stable
+[2026-03-21 00:00:06] Append changelog: v0.9.61 — 2026-03-21_0000
+[2026-03-21 00:00:06] No notes found (file missing or empty).
+[2026-03-21 00:00:06] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.61_2026-03-21_0000.zip
+[2026-03-21 00:00:06] ✅ Release done: v0.9.61
+[2026-03-21 00:00:06] Archive: [2026-03-21 00:00:06] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.61_2026-03-21_0000.zip
+/volume1/web/planetstar/releases/PlanetStar_v0.9.61_2026-03-21_0000.zip
+[2026-03-22 00:00:06] Release start (bump=patch)
+[2026-03-22 00:00:06] ROOT=/volume1/web/planetstar
+[2026-03-22 00:00:06] DEV=/volume1/web/planetstar/dev
+[2026-03-22 00:00:06] STABLE=/volume1/web/planetstar/stable
+[2026-03-22 00:00:06] CHANGELOG=/volume1/web/planetstar/CHANGELOG.md
+[2026-03-22 00:00:06] HOME_NOTES=/volume1/homes/Robin/planetstar_release-notes.txt
+[2026-03-22 00:00:06] Version: 0.9.61 → 0.9.62
+[2026-03-22 00:00:06] Sync dev → stable
+[2026-03-22 00:00:07] Append changelog: v0.9.62 — 2026-03-22_0000
+[2026-03-22 00:00:07] No notes found (file missing or empty).
+[2026-03-22 00:00:07] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.62_2026-03-22_0000.zip
+[2026-03-22 00:00:07] ✅ Release done: v0.9.62
+[2026-03-22 00:00:07] Archive: [2026-03-22 00:00:07] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.62_2026-03-22_0000.zip
+/volume1/web/planetstar/releases/PlanetStar_v0.9.62_2026-03-22_0000.zip
+[2026-03-23 00:00:03] Release start (bump=patch)
+[2026-03-23 00:00:03] ROOT=/volume1/web/planetstar
+[2026-03-23 00:00:03] DEV=/volume1/web/planetstar/dev
+[2026-03-23 00:00:03] STABLE=/volume1/web/planetstar/stable
+[2026-03-23 00:00:03] CHANGELOG=/volume1/web/planetstar/CHANGELOG.md
+[2026-03-23 00:00:03] HOME_NOTES=/volume1/homes/Robin/planetstar_release-notes.txt
+[2026-03-23 00:00:04] Version: 0.9.62 → 0.9.63
+[2026-03-23 00:00:04] Sync dev → stable
+[2026-03-23 00:00:07] Append changelog: v0.9.63 — 2026-03-23_0000
+[2026-03-23 00:00:07] No notes found (file missing or empty).
+[2026-03-23 00:00:07] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.63_2026-03-23_0000.zip
+[2026-03-23 00:00:07] ✅ Release done: v0.9.63
+[2026-03-23 00:00:07] Archive: [2026-03-23 00:00:07] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.63_2026-03-23_0000.zip
+/volume1/web/planetstar/releases/PlanetStar_v0.9.63_2026-03-23_0000.zip
+[2026-03-24 00:00:07] Release start (bump=patch)
+[2026-03-24 00:00:07] ROOT=/volume1/web/planetstar
+[2026-03-24 00:00:07] DEV=/volume1/web/planetstar/dev
+[2026-03-24 00:00:07] STABLE=/volume1/web/planetstar/stable
+[2026-03-24 00:00:07] CHANGELOG=/volume1/web/planetstar/CHANGELOG.md
+[2026-03-24 00:00:07] HOME_NOTES=/volume1/homes/Robin/planetstar_release-notes.txt
+[2026-03-24 00:00:07] Version: 0.9.63 → 0.9.64
+[2026-03-24 00:00:07] Sync dev → stable
+[2026-03-24 00:00:08] Append changelog: v0.9.64 — 2026-03-24_0000
+[2026-03-24 00:00:08] No notes found (file missing or empty).
+[2026-03-24 00:00:08] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.64_2026-03-24_0000.zip
+[2026-03-24 00:00:08] ✅ Release done: v0.9.64
+[2026-03-24 00:00:08] Archive: [2026-03-24 00:00:08] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.64_2026-03-24_0000.zip
+/volume1/web/planetstar/releases/PlanetStar_v0.9.64_2026-03-24_0000.zip
+[2026-03-25 00:00:03] Release start (bump=patch)
+[2026-03-25 00:00:03] ROOT=/volume1/web/planetstar
+[2026-03-25 00:00:03] DEV=/volume1/web/planetstar/dev
+[2026-03-25 00:00:03] STABLE=/volume1/web/planetstar/stable
+[2026-03-25 00:00:03] CHANGELOG=/volume1/web/planetstar/CHANGELOG.md
+[2026-03-25 00:00:03] HOME_NOTES=/volume1/homes/Robin/planetstar_release-notes.txt
+[2026-03-25 00:00:03] Version: 0.9.64 → 0.9.65
+[2026-03-25 00:00:03] Sync dev → stable
+[2026-03-25 00:00:04] Append changelog: v0.9.65 — 2026-03-25_0000
+[2026-03-25 00:00:04] No notes found (file missing or empty).
+[2026-03-25 00:00:04] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.65_2026-03-25_0000.zip
+[2026-03-25 00:00:04] ✅ Release done: v0.9.65
+[2026-03-25 00:00:04] Archive: [2026-03-25 00:00:04] Create zip: /volume1/web/planetstar/releases/PlanetStar_v0.9.65_2026-03-25_0000.zip
+/volume1/web/planetstar/releases/PlanetStar_v0.9.65_2026-03-25_0000.zip

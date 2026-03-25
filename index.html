@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+  <title>Planet Star</title>
+  
+  <!-- iOS Splash Screens (optional, viele Dateien) -->
+<link rel="apple-touch-startup-image" href="icons/splash/splash-iphone-13-14-portrait-1170x2532.png" media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+<link rel="apple-touch-startup-image" href="icons/splash/splash-iphone-12-14-plus-portrait-1284x2778.png" media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+<link rel="apple-touch-startup-image" href="icons/splash/splash-iphone-x-11pro-portrait-1125x2436.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+<link rel="apple-touch-startup-image" href="icons/splash/splash-iphone-xsmax-11promax-portrait-1242x2688.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+<link rel="apple-touch-startup-image" href="icons/splash/splash-iphone-xr-11-portrait-828x1792.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+
+<link rel="apple-touch-startup-image" href="icons/splash/splash-ipad-10th-portrait-1620x2160.png" media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+<link rel="apple-touch-startup-image" href="icons/splash/splash-ipad-pro-11-portrait-1668x2388.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+<link rel="apple-touch-startup-image" href="icons/splash/splash-ipad-pro-12.9-portrait-2048x2732.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+ 
+
+  <link rel="stylesheet" href="style.css" id="ps-css" />
+<script>
+  (function () {
+    const b = (window.__PS_BUILD && String(window.__PS_BUILD)) || ("dev-" + Date.now());
+    const el = document.getElementById("ps-css");
+    el.href = "style.css?v=" + encodeURIComponent(b);
+  })();
+</script>
+  <link rel="stylesheet" href="bg.css" />
+
+
+
+<!-- PWA -->
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#071226">
+
+<!-- iOS Web App -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Planet Star">
+
+<!-- iOS Icons -->
+<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon-180.png">
+<link rel="apple-touch-icon" sizes="167x167" href="icons/apple-touch-icon-167.png">
+<link rel="apple-touch-icon" sizes="152x152" href="icons/apple-touch-icon-152.png">
+<link rel="apple-touch-icon" sizes="120x120" href="icons/apple-touch-icon-120.png">
+
+<!-- Favicons -->
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16.png">
+
+</head>
+
+<body class="boot hasBg">
+	<!-- Shared Menu Background -->
+<div id="bg" aria-hidden="true">
+  <canvas id="bgCanvas"></canvas>
+  <div id="bgStars"></div>
+</div>
+
+<!-- Game Canvas (must NOT be inside #bg) -->
+<canvas id="game"></canvas>
+
+  <!-- HUD -->
+  <div id="hud" class="hidden">
+    <div class="hud-left">
+      <div id="hudLevel" class="pill">Level 1</div>
+      <div id="hudPlanets" class="pill">Planeten: 0/0</div>
+    </div>
+    <div id="pauseBtn" class="pill button">⏸︎</div>
+  </div>
+
+  <!-- Overlay (Menüs) -->
+  <div id="overlay" class="overlay">
+
+    <!-- Main Menu -->
+    <div id="menuMain" class="panel">
+		<div class="menuLogo">
+  <img class="menuLogoSvg" src="icons/logo-512.png" alt="Planet Star Logo">
+  <div class="betaPill">BETA</div>
+</div>
+
+      <div class="title">PLANET STAR</div>
+      <div class="subtitle">Ruhiges, meditatives Weltraum-Spiel</div>
+
+      <button id="btnStart" class="bigBtn">Spiel starten</button>
+	  <button id="btnGalaxy" class="bigBtn ghost">Galaxie wählen</button>
+      <button id="btnSettings" class="bigBtn ghost">Einstellungen</button>
+      <button id="btnAbout" class="bigBtn ghost">Über</button>
+
+      <div class="footerHint">
+  <a class="legalLink" href="impressum.html">Impressum</a>
+  &nbsp;·&nbsp;
+  <a class="legalLink" href="datenschutz.html">Datenschutz</a>
+  &nbsp;·&nbsp;
+  <a class="legalLink" id="linkBugReport" href="#">Fehler melden</a>
+  <div id="versionHint" class="versionHint"></div>
+</div>
+    </div>
+
+    <!-- Settings -->
+    <div id="menuSettings" class="panel hidden">
+      <div class="title small">Einstellungen</div>
+
+      <div class="row">
+        <div class="label">Musik</div>
+        <label class="switch">
+          <input id="toggleMusic" type="checkbox" />
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="row">
+        <div class="label">Sound</div>
+        <label class="switch">
+          <input id="toggleSfx" type="checkbox" />
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="row">
+        <div class="label">Vibration</div>
+        <label class="switch">
+          <input id="toggleVibe" type="checkbox" />
+          <span class="slider"></span>
+        </label>
+      </div>
+	  
+	  <button id="btnHowToPlay" class="bigBtn ghost">Wie spielt man?</button>
+
+	  <button id="btnResetProgress" class="bigBtn ghost">Level zurücksetzen</button>
+	  
+      <button id="btnSettingsBack" class="bigBtn ghost">Zurück</button>
+    </div>
+
+    <!-- About -->
+    <div id="menuAbout" class="panel hidden">
+      <div class="title small">Über Planet Star</div>
+
+      <div class="panelScroll aboutScroll">
+        <div class="text">
+          <strong>Planet Star</strong> ist ein ruhiges, meditatives Weltraum-Spiel für Handy und Tablet.
+          Du steuerst einen kleinen grünen Punkt durch den Raum, sammelst lila Planeten ein und wächst mit jeder Begegnung.
+        </div>
+
+        <div class="text">
+          Sobald alle Planeten eines Levels eingesammelt sind, erscheint ein gelber Stern.
+          Er flieht vor dir – erst wenn du ihn fängst, ist das Level abgeschlossen.
+          Mit jedem Level verändert sich das Verhalten der Planeten und des Sterns: subtil, aber spürbar.
+        </div>
+
+        <div class="text">
+          Planet Star folgt keinem Zeitdruck.
+          Es geht nicht um Schnelligkeit, sondern um Aufmerksamkeit, Bewegung und Präsenz.
+          Das Spiel lädt dazu ein, kurz abzuschalten und in einen eigenen kleinen Kosmos einzutauchen.
+        </div>
+
+        <div class="text">
+          Planet Star ist ein Projekt von
+          <a class="inlineLink" href="https://www.instagram.com/obin.life" target="_blank" rel="noopener noreferrer">Obin.life</a>.
+          Die ursprüngliche Idee stammt von meiner Tochter.
+          Aus einer spielerischen Vorstellung von „Punkten im Weltall“ ist dieses Spiel Schritt für Schritt entstanden –
+          bewusst reduziert, ruhig und ohne Ablenkung.
+        </div>
+
+        <div class="text">
+          <strong>Philosophie:</strong><br>
+          Touch-first &amp; mobile-optimiert.<br>
+          Keine Konten, kein Tracking, keine Werbung.<br>
+          Minimalistisch, ruhig und fokussiert.
+        </div>
+      </div>
+
+      <button id="btnAboutBack" class="bigBtn ghost">Zurück</button>
+    </div>
+	
+	<div id="menuHowTo" class="panel hidden">
+  <div class="title small">Wie spielt man?</div>
+
+  <div class="panelScroll">
+    <div class="text">
+      • Bewege den grünen Punkt mit deinem Finger.<br>
+      • Sammle alle lila Planeten ein – du wirst dabei größer.<br>
+      • Sobald alle Planeten verschwunden sind, erscheint ein gelber Stern.<br>
+      • Der Stern flieht – fange ihn, um das Level abzuschließen.
+    </div>
+
+    <div class="text">
+      Planet Star ist bewusst ruhig gestaltet.<br>
+      Es gibt keinen Zeitdruck – folge deinem Gefühl,
+      bewege dich achtsam und finde deinen eigenen Flow.
+    </div>
+  </div>
+
+  <button id="btnHowToBack" class="bigBtn ghost">Zurück</button>
+</div>
+
+    <!-- Pause -->
+    <div id="menuPause" class="panel hidden">
+      <div class="title small">Pause</div>
+      <button id="btnResume" class="bigBtn">Weiter</button>
+      <button id="btnPauseSettings" class="bigBtn ghost">Einstellungen</button>
+      <button id="btnRestart" class="bigBtn ghost">Neu starten</button>
+      <button id="btnQuit" class="bigBtn ghost">Zum Menü</button>
+    </div>
+
+    <!-- Win -->
+    <div id="menuWin" class="panel hidden">
+      <div class="title small">Geschafft ✨</div>
+      <div class="text">Du hast Level 10 abgeschlossen.</div>
+      <button id="btnWinQuit" class="bigBtn">Zum Menü</button>
+    </div>
+
+  </div>
+  
+  <script src="loader.js" defer></script>
+
+</body>
+</html>
