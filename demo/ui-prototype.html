@@ -1,0 +1,509 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"/>
+<title>Planet Star — UI Prototyp</title>
+<style>
+:root {
+  --bg-deep: #060d1f;
+  --bg-panel: rgba(12,18,40,0.88);
+  --accent-green: #7CFF5A;
+  --accent-purple: #C9A6FF;
+  --accent-yellow: #FFD44A;
+  --accent-pink: #FF63C6;
+  --text-main: rgba(255,255,255,0.92);
+  --text-dim: rgba(255,255,255,0.5);
+  --glass: rgba(255,255,255,0.06);
+  --glass-border: rgba(255,255,255,0.08);
+  --radius: 16px;
+  --radius-sm: 12px;
+  --radius-pill: 999px;
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+* { margin:0; padding:0; box-sizing:border-box }
+html, body {
+  width:100%; height:100%; overflow:hidden;
+  background: var(--bg-deep);
+  font-family: -apple-system, system-ui, 'Segoe UI', sans-serif;
+  color: var(--text-main);
+  touch-action: none; user-select: none; -webkit-user-select: none;
+}
+
+/* --- Canvas background --- */
+canvas#bgCanvas { position:fixed; inset:0; z-index:0; width:100%; height:100% }
+
+/* --- Screen container --- */
+.screen {
+  position: fixed; inset: 0; z-index: 10;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  padding: 24px 20px calc(24px + var(--safe-bottom));
+  opacity: 0; pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+.screen.active { opacity: 1; pointer-events: auto }
+
+/* --- Glassmorphic panel --- */
+.panel {
+  background: var(--bg-panel);
+  backdrop-filter: blur(28px); -webkit-backdrop-filter: blur(28px);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius);
+  padding: 28px 24px;
+  max-width: 380px; width: 100%;
+  display: flex; flex-direction: column; align-items: center; gap: 10px;
+}
+
+/* --- Typography --- */
+.title { font-size: 26px; font-weight: 700; letter-spacing: 2px; text-align: center }
+.title.small { font-size: 20px; letter-spacing: 1px }
+.subtitle { font-size: 13px; color: var(--text-dim); text-align: center; margin-top: -4px }
+.text { font-size: 13px; line-height: 1.6; color: rgba(255,255,255,0.72); text-align: center }
+
+/* --- Logo area --- */
+.logo-area { display:flex; flex-direction:column; align-items:center; gap:6px; margin-bottom:6px }
+.logo-circle {
+  width:72px; height:72px; border-radius:50%;
+  background: radial-gradient(circle, var(--accent-purple) 30%, transparent 70%);
+  display:flex; align-items:center; justify-content:center;
+  font-size:32px;
+}
+.beta-pill {
+  font-size:10px; font-weight:700; letter-spacing:1.5px;
+  padding:3px 10px; border-radius:var(--radius-pill);
+  background:rgba(124,255,90,0.15); color:var(--accent-green);
+}
+
+/* --- Buttons --- */
+.btn {
+  width: 100%; padding: 14px 0;
+  border: none; border-radius: var(--radius-sm);
+  font-size: 15px; font-weight: 600; cursor: pointer;
+  transition: all 0.2s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+.btn-primary {
+  background: var(--accent-green); color: #0a1628;
+}
+.btn-primary:active { transform: scale(0.97); filter: brightness(0.9) }
+.btn-ghost {
+  background: var(--glass); color: var(--text-main);
+  border: 1px solid var(--glass-border);
+}
+.btn-ghost:active { background: rgba(255,255,255,0.1) }
+
+/* --- Toggle row --- */
+.setting-row {
+  width:100%; display:flex; align-items:center; justify-content:space-between;
+  padding: 8px 0;
+}
+.setting-label { font-size:14px; color:var(--text-main) }
+.toggle {
+  width:46px; height:26px; border-radius:13px; position:relative; cursor:pointer;
+  background: rgba(255,255,255,0.15); transition: background 0.2s;
+}
+.toggle.on { background: var(--accent-green) }
+.toggle-knob {
+  position:absolute; top:3px; left:3px;
+  width:20px; height:20px; border-radius:50%;
+  background:#fff; transition: transform 0.2s;
+}
+.toggle.on .toggle-knob { transform: translateX(20px) }
+
+/* --- HUD (gameplay) --- */
+.hud {
+  position:fixed; top:0; left:0; right:0; z-index:20;
+  display:flex; align-items:center; justify-content:space-between;
+  padding: 12px 16px;
+  padding-top: calc(12px + env(safe-area-inset-top, 0px));
+}
+.hud .pill {
+  padding:6px 14px; border-radius:var(--radius-pill);
+  background:rgba(0,0,0,0.4); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px);
+  font-size:12px; font-weight:600; color:var(--text-main);
+}
+.hud .pause-btn {
+  width:36px; height:36px; border-radius:50%;
+  background:rgba(0,0,0,0.4); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px);
+  display:flex; align-items:center; justify-content:center;
+  font-size:16px; cursor:pointer; border:none; color:var(--text-main);
+}
+
+/* --- Footer links --- */
+.footer {
+  display:flex; gap:8px; font-size:11px; color:var(--text-dim); margin-top:6px;
+  flex-wrap:wrap; justify-content:center;
+}
+.footer a { color:var(--text-dim); text-decoration:none }
+
+/* --- Version --- */
+.version { font-size:10px; color:rgba(255,255,255,0.25); margin-top:2px }
+
+/* --- Nav hint (bottom) --- */
+.nav-hint {
+  position:fixed; bottom: max(10px, var(--safe-bottom)); left:50%; transform:translateX(-50%);
+  z-index:30; padding:6px 14px; border-radius:var(--radius-pill);
+  background:rgba(0,0,0,0.35); backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px);
+  font-size:11px; color:rgba(255,255,255,0.4); pointer-events:none;
+}
+
+/* --- Gameplay entities (CSS circles) --- */
+.entity {
+  position:absolute; border-radius:50%;
+  transition: transform 0.3s ease;
+}
+.entity-player {
+  width:26px; height:26px; background: var(--accent-green);
+  box-shadow: 0 0 30px rgba(124,255,90,0.25), 0 0 60px rgba(124,255,90,0.08);
+}
+.entity-planet {
+  width:16px; height:16px; background: var(--accent-purple);
+  box-shadow: 0 0 20px rgba(201,166,255,0.2);
+}
+.entity-star {
+  width:22px; height:22px; background: var(--accent-yellow);
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  filter: drop-shadow(0 0 12px rgba(255,212,74,0.4));
+}
+
+/* --- Scrollable text --- */
+.scroll-text {
+  max-height: 200px; overflow-y: auto; padding-right: 4px;
+  -webkit-overflow-scrolling: touch;
+}
+.scroll-text::-webkit-scrollbar { width: 3px }
+.scroll-text::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.15); border-radius: 3px }
+
+/* --- Galaxy level dots --- */
+.galaxy-view {
+  display:flex; flex-direction:column; align-items:center; gap:18px;
+  max-height:55vh; overflow-y:auto; padding:10px 0;
+  -webkit-overflow-scrolling:touch;
+}
+.level-dot {
+  width:28px; height:28px; border-radius:50%; cursor:pointer;
+  display:flex; align-items:center; justify-content:center;
+  font-size:10px; font-weight:700; transition: all 0.2s;
+}
+.level-dot.unlocked { background:var(--accent-purple); color:#fff }
+.level-dot.locked { background:rgba(255,255,255,0.08); color:rgba(255,255,255,0.25) }
+.level-dot.current { background:var(--accent-green); color:#0a1628; transform:scale(1.3) }
+</style>
+</head>
+<body>
+
+<canvas id="bgCanvas"></canvas>
+
+<!-- ======= MAIN MENU ======= -->
+<div class="screen active" id="screenMenu">
+  <div class="panel">
+    <div class="logo-area">
+      <div class="logo-circle">&#11088;</div>
+      <div class="beta-pill">BETA</div>
+    </div>
+    <div class="title">PLANET STAR</div>
+    <div class="subtitle">Ruhiges, meditatives Weltraum-Spiel</div>
+
+    <button class="btn btn-primary" onclick="goTo('screenGame')">Spiel starten</button>
+    <button class="btn btn-ghost" onclick="goTo('screenGalaxy')">Galaxie w&auml;hlen</button>
+    <button class="btn btn-ghost" onclick="goTo('screenSettings')">Einstellungen</button>
+    <button class="btn btn-ghost" onclick="goTo('screenAbout')">Über</button>
+
+    <div class="footer">
+      <a href="#" onclick="goTo('screenImpressum');return false">Impressum</a>
+      <span>&middot;</span>
+      <a href="#" onclick="goTo('screenDatenschutz');return false">Datenschutz</a>
+      <span>&middot;</span>
+      <a href="#">Fehler melden</a>
+    </div>
+    <div class="version">Version 0.10.0 (dev 00035)</div>
+  </div>
+</div>
+
+<!-- ======= GAMEPLAY ======= -->
+<div class="screen" id="screenGame">
+  <div class="hud">
+    <div style="display:flex;gap:8px">
+      <div class="pill">Level 3</div>
+      <div class="pill">Planeten 4/15</div>
+    </div>
+    <button class="pause-btn" onclick="goTo('screenPause')">&#9208;&#65038;</button>
+  </div>
+
+  <!-- Fake entities -->
+  <div class="entity entity-player" style="left:48%;top:62%"></div>
+  <div class="entity entity-planet" style="left:22%;top:28%"></div>
+  <div class="entity entity-planet" style="left:68%;top:35%"></div>
+  <div class="entity entity-planet" style="left:35%;top:18%"></div>
+  <div class="entity entity-planet" style="left:72%;top:55%"></div>
+  <div class="entity entity-planet" style="left:15%;top:50%"></div>
+  <div class="entity entity-planet" style="left:55%;top:22%"></div>
+  <div class="entity entity-planet" style="left:82%;top:42%"></div>
+  <div class="entity entity-planet" style="left:42%;top:40%"></div>
+  <div class="entity entity-planet" style="left:28%;top:65%"></div>
+  <div class="entity entity-planet" style="left:60%;top:70%"></div>
+  <div class="entity entity-planet" style="left:80%;top:68%"></div>
+</div>
+
+<!-- ======= PAUSE ======= -->
+<div class="screen" id="screenPause">
+  <div class="panel">
+    <div class="title small">Pause</div>
+    <button class="btn btn-primary" onclick="goTo('screenGame')">Weiter</button>
+    <button class="btn btn-ghost" onclick="goTo('screenSettings')">Einstellungen</button>
+    <button class="btn btn-ghost" onclick="goTo('screenGame')">Neu starten</button>
+    <button class="btn btn-ghost" onclick="goTo('screenMenu')">Zum Men&uuml;</button>
+  </div>
+</div>
+
+<!-- ======= WIN ======= -->
+<div class="screen" id="screenWin">
+  <div class="panel">
+    <div class="title small">Geschafft</div>
+    <div class="text">Du hast Level 10 abgeschlossen.</div>
+    <button class="btn btn-primary" onclick="goTo('screenMenu')">Zum Men&uuml;</button>
+  </div>
+</div>
+
+<!-- ======= SETTINGS ======= -->
+<div class="screen" id="screenSettings">
+  <div class="panel">
+    <div class="title small">Einstellungen</div>
+
+    <div class="setting-row">
+      <span class="setting-label">Musik</span>
+      <div class="toggle on" onclick="this.classList.toggle('on')"><div class="toggle-knob"></div></div>
+    </div>
+    <div class="setting-row">
+      <span class="setting-label">Sound</span>
+      <div class="toggle on" onclick="this.classList.toggle('on')"><div class="toggle-knob"></div></div>
+    </div>
+    <div class="setting-row">
+      <span class="setting-label">Vibration</span>
+      <div class="toggle on" onclick="this.classList.toggle('on')"><div class="toggle-knob"></div></div>
+    </div>
+
+    <button class="btn btn-ghost" onclick="goTo('screenHowTo')">Wie spielt man?</button>
+    <button class="btn btn-ghost" style="color:var(--accent-pink)" onclick="alert('Level zur\u00fcckgesetzt!')">Level zur&uuml;cksetzen</button>
+    <button class="btn btn-ghost" onclick="goBack()">Zur&uuml;ck</button>
+  </div>
+</div>
+
+<!-- ======= HOW TO PLAY ======= -->
+<div class="screen" id="screenHowTo">
+  <div class="panel">
+    <div class="title small">Wie spielt man?</div>
+    <div class="scroll-text">
+      <div class="text" style="text-align:left">
+        &bull; Bewege den gr&uuml;nen Punkt mit deinem Finger.<br><br>
+        &bull; Sammle alle lila Planeten ein &mdash; du wirst dabei gr&ouml;&szlig;er.<br><br>
+        &bull; Sobald alle Planeten verschwunden sind, erscheint ein gelber Stern.<br><br>
+        &bull; Der Stern flieht &mdash; fange ihn, um das Level abzuschlie&szlig;en.<br><br>
+        Planet Star ist bewusst ruhig gestaltet. Es gibt keinen Zeitdruck &mdash; folge deinem Gef&uuml;hl.
+      </div>
+    </div>
+    <button class="btn btn-ghost" onclick="goTo('screenSettings')">Zur&uuml;ck</button>
+  </div>
+</div>
+
+<!-- ======= ABOUT ======= -->
+<div class="screen" id="screenAbout">
+  <div class="panel">
+    <div class="title small">&Uuml;ber Planet Star</div>
+    <div class="scroll-text">
+      <div class="text">
+        <strong>Planet Star</strong> ist ein ruhiges, meditatives Weltraum-Spiel f&uuml;r Handy und Tablet.<br><br>
+        Du steuerst einen kleinen gr&uuml;nen Punkt durch den Raum, sammelst lila Planeten ein und w&auml;chst mit jeder Begegnung.<br><br>
+        Planet Star folgt keinem Zeitdruck. Es geht nicht um Schnelligkeit, sondern um Aufmerksamkeit, Bewegung und Pr&auml;senz.<br><br>
+        <strong>Philosophie:</strong><br>
+        Touch-first &amp; mobile-optimiert.<br>
+        Keine Konten, kein Tracking, keine Werbung.<br>
+        Minimalistisch, ruhig und fokussiert.
+      </div>
+    </div>
+    <button class="btn btn-ghost" onclick="goTo('screenMenu')">Zur&uuml;ck</button>
+  </div>
+</div>
+
+<!-- ======= GALAXY (Level-Auswahl) ======= -->
+<div class="screen" id="screenGalaxy">
+  <div class="panel">
+    <div class="title small">Galaxie</div>
+    <div class="galaxy-view" id="galaxyView"></div>
+    <button class="btn btn-primary" onclick="goTo('screenGame')">Level starten</button>
+    <button class="btn btn-ghost" onclick="goTo('screenMenu')">Zur&uuml;ck</button>
+  </div>
+</div>
+
+<!-- ======= START CHOICE ======= -->
+<div class="screen" id="screenStartChoice">
+  <div class="panel">
+    <div class="title small">Spiel starten</div>
+    <div class="text">Du kannst bei Level 4 weiterspielen oder neu anfangen.</div>
+    <button class="btn btn-primary" onclick="goTo('screenGame')">Weiter (Level 4)</button>
+    <button class="btn btn-ghost" onclick="goTo('screenGame')">Neu anfangen (Level 1)</button>
+    <button class="btn btn-ghost" onclick="goTo('screenMenu')">Zur&uuml;ck</button>
+  </div>
+</div>
+
+<!-- ======= PAYWALL ======= -->
+<div class="screen" id="screenPaywall">
+  <div class="panel">
+    <div class="title small">Premium</div>
+    <div class="text">Ab Level 16 ist Planet Star ein kleines Premium-Upgrade.</div>
+    <button class="btn btn-primary" onclick="goTo('screenMenu')">Sp&auml;ter</button>
+    <button class="btn btn-ghost" onclick="alert('Kommt sp\u00e4ter!')">Freischalten</button>
+  </div>
+</div>
+
+<!-- ======= IMPRESSUM ======= -->
+<div class="screen" id="screenImpressum">
+  <div class="panel">
+    <div class="title small">Impressum</div>
+    <div class="text">
+      Robin Sedlmeir<br>Deutschland<br><br>
+      hallo@obin.life<br>
+      @obin.life (Instagram)
+    </div>
+    <button class="btn btn-ghost" onclick="goTo('screenMenu')">Zur&uuml;ck</button>
+  </div>
+</div>
+
+<!-- ======= DATENSCHUTZ ======= -->
+<div class="screen" id="screenDatenschutz">
+  <div class="panel">
+    <div class="title small">Datenschutz</div>
+    <div class="scroll-text">
+      <div class="text">
+        Planet Star erhebt keine personenbezogenen Daten.<br><br>
+        Spieleinstellungen werden lokal auf deinem Ger&auml;t gespeichert (Local Storage).<br><br>
+        Keine Cookies, keine Analytics, kein Tracking.
+      </div>
+    </div>
+    <button class="btn btn-ghost" onclick="goTo('screenMenu')">Zur&uuml;ck</button>
+  </div>
+</div>
+
+<!-- ======= STAR PHASE (gameplay variant) ======= -->
+<div class="screen" id="screenStarPhase">
+  <div class="hud">
+    <div style="display:flex;gap:8px">
+      <div class="pill">Level 3</div>
+      <div class="pill" style="color:var(--accent-yellow)">Fang den Stern!</div>
+    </div>
+    <button class="pause-btn" onclick="goTo('screenPause')">&#9208;&#65038;</button>
+  </div>
+  <div class="entity entity-player" style="left:35%;top:58%"></div>
+  <div class="entity entity-star" style="left:68%;top:30%"></div>
+</div>
+
+<!-- Navigation hint -->
+<div class="nav-hint" id="navHint">Tippe auf Buttons um zwischen Screens zu wechseln</div>
+
+<script>
+// --- Background stars ---
+const bgCanvas = document.getElementById("bgCanvas");
+const bgCtx = bgCanvas.getContext("2d");
+let bgStars = [];
+
+function resizeBg() {
+  const w = window.innerWidth, h = window.innerHeight;
+  const dpr = Math.min(2, window.devicePixelRatio || 1);
+  bgCanvas.width = w * dpr; bgCanvas.height = h * dpr;
+  bgCanvas.style.width = w + "px"; bgCanvas.style.height = h + "px";
+  bgCtx.setTransform(dpr, 0, 0, dpr, 0, 0);
+
+  bgStars = [];
+  const count = Math.max(100, Math.round(w * h * 0.0004));
+  for (let i = 0; i < count; i++) {
+    const t = Math.random();
+    const r = t < 0.8 ? 0.5 + Math.random() * 0.6 : 1.1 + Math.random() * 0.8;
+    bgStars.push({ x: Math.random() * w, y: Math.random() * h, r, a: 0.12 + Math.random() * 0.55 });
+  }
+  drawBg();
+}
+
+function drawBg() {
+  const w = window.innerWidth, h = window.innerHeight;
+  bgCtx.clearRect(0, 0, w, h);
+  bgCtx.fillStyle = "#fff";
+  for (const s of bgStars) {
+    bgCtx.globalAlpha = s.a;
+    if (s.r < 1) bgCtx.fillRect(s.x, s.y, 1, 1);
+    else { bgCtx.beginPath(); bgCtx.arc(s.x, s.y, s.r, 0, Math.PI * 2); bgCtx.fill(); }
+  }
+  bgCtx.globalAlpha = 1;
+}
+
+window.addEventListener("resize", resizeBg);
+resizeBg();
+
+// --- Screen navigation ---
+let history = ["screenMenu"];
+
+function goTo(id) {
+  document.querySelectorAll(".screen.active").forEach(s => s.classList.remove("active"));
+  const el = document.getElementById(id);
+  if (el) el.classList.add("active");
+  history.push(id);
+
+  // Hide nav hint after first navigation
+  const hint = document.getElementById("navHint");
+  if (hint) hint.style.opacity = "0";
+}
+
+function goBack() {
+  if (history.length > 1) history.pop();
+  const prev = history[history.length - 1] || "screenMenu";
+  document.querySelectorAll(".screen.active").forEach(s => s.classList.remove("active"));
+  const el = document.getElementById(prev);
+  if (el) el.classList.add("active");
+}
+
+// --- Galaxy level dots ---
+const galaxyView = document.getElementById("galaxyView");
+for (let i = 1; i <= 20; i++) {
+  const dot = document.createElement("div");
+  dot.className = "level-dot " + (i <= 3 ? (i === 3 ? "current" : "unlocked") : "locked");
+  dot.textContent = i;
+  dot.style.marginLeft = (Math.sin(i * 0.8) * 40) + "px";
+  dot.onclick = () => {
+    document.querySelectorAll(".level-dot.current").forEach(d => { d.classList.remove("current"); d.classList.add("unlocked"); });
+    dot.classList.add("current");
+  };
+  galaxyView.appendChild(dot);
+}
+
+// --- Gameplay: make it look alive ---
+// Subtle floating animation for entities
+const entities = document.querySelectorAll("#screenGame .entity-planet, #screenStarPhase .entity-star");
+entities.forEach((el, i) => {
+  const ox = parseFloat(el.style.left);
+  const oy = parseFloat(el.style.top);
+  const sx = 0.3 + Math.random() * 0.5;
+  const sy = 0.2 + Math.random() * 0.4;
+  const px = Math.random() * Math.PI * 2;
+  const py = Math.random() * Math.PI * 2;
+
+  function anim(t) {
+    el.style.left = (ox + Math.sin(t * 0.001 * sx + px) * 2) + "%";
+    el.style.top = (oy + Math.cos(t * 0.001 * sy + py) * 1.5) + "%";
+    requestAnimationFrame(anim);
+  }
+  requestAnimationFrame(anim);
+});
+
+// Player gentle pulse
+const players = document.querySelectorAll(".entity-player");
+players.forEach(p => {
+  function pulse(t) {
+    const s = 1 + Math.sin(t * 0.003) * 0.08;
+    p.style.transform = `scale(${s})`;
+    requestAnimationFrame(pulse);
+  }
+  requestAnimationFrame(pulse);
+});
+</script>
+</body>
+</html>
